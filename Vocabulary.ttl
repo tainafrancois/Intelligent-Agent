@@ -1,0 +1,245 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dbp: <http://dbpedia.org/resource/>.
+@prefix rbps: <http://roboprof.com/schema#>.
+@prefix rbpd: <http://roboprof.com/data#>.
+
+# University Class
+
+rbps:University a rdfs:Class ;
+    rdfs:label "University"@en ;
+    rdfs:comment "This is a University"@en .
+
+
+# Course Class
+
+rbps:Course a rdfs:Class ;
+    rdfs:label "Course"@en ;
+    rdfs:comment "A course offered at a university."@en .
+
+
+# Course Properties
+
+rbps:CourseSubject a rdf:Property ;
+    rdfs:label "Course Subject"@en ;
+    rdfs:comment "The subject of the course."@en ;
+    rdfs:domain rbps:Course ;
+    rdfs:range xsd:string .
+
+rbps:CourseNumber a rdf:Property ;
+    rdfs:label "Course Number"@en ;
+    rdfs:comment "The number of the course."@en ;
+    rdfs:domain rbps:Course ;
+    rdfs:range xsd:integer .
+
+rbps:CourseOutline a rdf:Property ;
+    rdfs:label "Course Outline"@en ;
+    rdfs:comment "The course outline, if available."@en ;
+    rdfs:domain rbps:Course ;
+    rdfs:range rdfs:Resource.
+
+rbps:CourseDescription a rdf:Property ;
+    rdfs:label "Course Description"@en ;
+    rdfs:comment "The description of the course."@en ;
+    rdfs:domain rbps:Course;
+    rdfs:range xsd:string .
+
+rbps:CourseCredits a rdf:Property ;
+    rdfs:label "Course Credits"@en ;
+    rdfs:comment "The credits of the course."@en ;
+    rdfs:domain rbps:Course ;
+    rdfs:range xsd:decimal .
+
+rbps:CourseOfUniversity a rdf:Property ;
+    rdfs:label "Course Of University"@en ;
+    rdfs:comment "A university where the course is offered."@en ;
+    rdfs:domain rbps:Course;
+    rdfs:range rbps:University .
+
+
+rbps:CoveredTopic a rdf:Property ;
+    rdfs:label "Covered Topic"@en ;
+    rdfs:comment "Covered topic in a course."@en ;
+    rdfs:domain rbps:Course;
+    rdfs:range rbps:Topic .
+
+# Lecture Class
+
+rbps:Lecture a rdfs:Class ;
+    rdfs:label "Lecture"@en ;
+    rdfs:comment "Information about a lecture in a course."@en .
+
+# Lecture Properties
+
+rbps:LectureNumber a rdf:Property ;
+    rdfs:label "Lecture Number"@en ;
+    rdfs:comment "The sequential count of the lecture."@en ;
+    rdfs:domain rbps:Lecture ;
+    rdfs:range xsd:integer .
+
+rbps:TopicLecture a rdf:Property ;
+    rdfs:label "Topic Lecture"@en ;
+    rdfs:comment "The topic of the lecture."@en ;
+    rdfs:domain rbps:Lecture ;
+    rdfs:range rbps:Topic.
+
+rbps:hasReadings a rdf:Property ;
+    rdfs:label "has Lecture Content"@en ;
+    rdfs:comment "Readings of the lecture."@en ;
+    rdfs:domain rbps:Lecture ;
+    rdfs:range rbps:Readings .
+
+rbps:hasLabs a rdf:Property ;
+    rdfs:label "has Lecture Content"@en ;
+    rdfs:comment "Labs of the lecture."@en ;
+    rdfs:domain rbps:Lecture ;
+    rdfs:range rbps:Labs .
+
+rbps:hasSlides a rdf:Property ;
+    rdfs:label "has Lecture Content"@en ;
+    rdfs:comment "Slides of the lecture."@en ;
+    rdfs:domain rbps:Lecture ;
+    rdfs:range rbps:Slides .
+
+rbps:hasWorksheets a rdf:Property ;
+    rdfs:label "has Lecture Content"@en ;
+    rdfs:comment "Worksheets of the lecture."@en ;
+    rdfs:domain rbps:Lecture ;
+    rdfs:range rbps:Worksheets .
+
+rbps:hasOtherMaterial a rdf:Property ;
+    rdfs:label "has Lecture Content"@en ;
+    rdfs:comment "Other Material of the lecture."@en ;
+    rdfs:domain rbps:Lecture ;
+    rdfs:range rbps:OtherMaterial .
+
+
+rbps:LectureContent a rdfs:Class ;
+    rdfs:label "Lecture Content"@en ;
+    rdfs:comment "Abstract class for different types of lecture content."@en .
+
+# Subclasses of LectureContent
+
+rbps:Slides a rdfs:Class ;
+    rdfs:label "Slides"@en ;
+    rdfs:comment "Class for lecture slides."@en ;
+    rdfs:subClassOf rbps:LectureContent .
+
+rbps:Worksheets a rdfs:Class ;
+    rdfs:label "Worksheets"@en ;
+    rdfs:comment "Class for lecture worksheets."@en ;
+    rdfs:subClassOf rbps:LectureContent .
+
+rbps:Readings a rdfs:Class ;
+    rdfs:label "Readings"@en ;
+    rdfs:comment "Class for lecture readings."@en ;
+    rdfs:subClassOf rbps:LectureContent .
+
+rbps:Labs a rdfs:Class ;
+    rdfs:label "Labs"@en ;
+    rdfs:comment "Class for lecture Labs."@en ;
+    rdfs:subClassOf rbps:LectureContent .
+
+rbps:OtherMaterial a rdfs:Class ;
+    rdfs:label "Other Materials"@en ;
+    rdfs:comment "Class for other lecture materials (videos, images, etc.)."@en ;
+    rdfs:subClassOf rbps:LectureContent .
+
+rbps:aboutTopic a rdf:Property ;
+    rdfs:label "Topic of content"@en ;
+    rdfs:comment "A topic provides the lecture content."@en ;
+    rdfs:domain rbps:LectureContent ;
+    rdfs:range rbps:Topic.
+
+rbps:LectureOfCourse a rdf:Property ;
+    rdfs:label "Lecture Of Course"@en ;
+    rdfs:comment "A course provides the lecture."@en ;
+    rdfs:domain rbps:Lecture ;
+    rdfs:range rbps:Course.
+
+
+# Topic Class
+
+rbps:Topic a rdfs:Class ;
+    rdfs:label "Topic" ;
+    rdfs:comment "Information about a topic covered in a course." .
+
+# Topic Properties
+
+rbps:TopicProvenance a rdf:Property ;
+    rdfs:label "Provenance Information"@en ;
+    rdfs:comment "Records where the topic was identified as being covered in the course(e.g., the (graduate) calendar, the course outline or a specic lecture)."@en ;
+    rdfs:domain rbps:Topic;
+    rdfs:range rbps:LectureContent.
+	
+# Student Class
+
+rbps:Student a rdfs:Class ;
+    rdfs:label "Student"@en ;
+    rdfs:comment "Information about a student."@en .
+
+# Student properties
+
+rbps:IDNumber a rdf:Property ;
+    rdfs:label "ID Number"@en ;
+    rdfs:comment "The ID number of the student."@en ;
+    rdfs:domain rbps:Student ;
+    rdfs:range xsd:integer .
+
+rbps:hasAttempt a rdf:Property ;
+    rdfs:label "hasGrade"@en ;
+    rdfs:comment "Used to provide a student's attempt to complete a course ."@en ;
+    rdfs:domain rbps:Student ;
+    rdfs:range rbps:Attempt .
+
+rbps:Competency a rdf:Property ;
+    rdfs:label "Competency"@en ;
+    rdfs:comment "The competencies of the student based on completed courses."@en ;
+    rdfs:domain rbps:Student ;
+    rdfs:range rbps:Topic .
+
+rbps:hasEnrolled a rdf:Property ;
+    rdfs:label "has Enrolled"@en ;
+    rdfs:comment "A relationship exists between the student and a university."@en ;
+    rdfs:domain rbps:Student ;
+    rdfs:range rbps:University .
+
+# Attempt class
+rbps:Attempt a rdfs:Class ;
+    rdfs:label "Attempt" ;
+    rdfs:comment "A attempt of a student to complete a course." .
+
+# Attempt properties
+
+rbps:AttemptCourse a rdf:Property ;
+    rdfs:label "Attempt a course"@en ;
+    rdfs:comment "Used to provide the course a student attempted."@en ;
+    rdfs:domain rbps:Attempt ;
+    rdfs:range rbps:Course .
+
+rbps:AttemptGrade a rdf:Property ;
+    rdfs:label "Attempt Grade"@en ;
+    rdfs:comment "Used to provide the grade for the attempt."@en ;
+    rdfs:domain rbps:Attempt ;
+    rdfs:range rbps:Grade .
+
+# Grade class
+rbps:Grade a rdfs:Class ;
+    rdfs:label "Grade" ;
+    rdfs:comment "A grade of a student in a course." .
+
+# Grade properties
+
+rbps:Value a rdf:Property ;
+    rdfs:label "Value"@en ;
+    rdfs:comment "Used to provide the grade value of a student."@en ;
+    rdfs:domain rbps:Grade ;
+    rdfs:range xsd:decimal .
+
+rbps:Date a rdf:Property ;
+    rdfs:label "Date"@en ;
+    rdfs:comment "The date that the grade is finalized."@en ;
+    rdfs:domain rbps:Grade ;
+    rdfs:range xsd:date .
+

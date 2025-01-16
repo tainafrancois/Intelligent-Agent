@@ -1,0 +1,741 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+Course number Course Title Term 
+
+COMP 445 Data Communication & Computer Networks Winter 2023 
+
+ 
+
+Course Instructor Office E-Mail Office Hours 
+
+Dr. Sandra 
+
+Céspedes 
+(Coordinator) 
+
+ER 1221 sandra.cespedes@concordia.ca Thursday 11:00 AM – 12:00 
+PM or by appointment 
+
+Dr. Abdelhak 
+Bentaleb 
+
+ER 1223 abdelhak.bentaleb@concordia.ca Wednesday 3:30 PM – 4:30 
+PM or by appointment 
+
+ 
+ 
+
+CLASS, LAB AND TUTORIAL SCHEDULE 
+
+Section Day Time   Location  Instructor  E-mail 
+
+M  MoWe 
+1:15 pm 
+– 2:30 
+pm 
+
+H 1070 
+SGW 
+
+Dr. Abdelhak 
+Bentaleb 
+ 
+
+abdelhak.bentaleb@concordia.ca 
+ 
+
+W 
+Tu 
+Th 
+
+1:15 pm 
+– 2:30 
+pm 
+
+EV 
+2.260 
+SGW 
+
+Dr. Sandra 
+Céspedes 
+
+sandra.cespedes@concordia.ca 
+ 
+
+ 
+ 
+
+Labs     E-Mail Lab Start Date 
+
+To be announced. Please check Moodle for full 
+details 
+
+ Week 3 
+
+ 
+
+COURSE CALENDAR DESCRIPTION 
+
+Network architectures: OSI and Internet models. Link layer: error detection, multiple access 
+protocols, addressing. Local area networks: Ethernet, ATM, switches and hubs. Network layer: 
+forwarding and routing, IP, routing algorithms, multicast. Transport layer: connectionless and 
+connection‑oriented transport, reliable data transport, congestion control, QoS, UDP and TCP. 
+Application layer: DNS, the web and http, file transfer, and email. Introduction to network security, 
+multimedia protocols and wireless networking. 
+
+ 
+
+PREREQUISITES 
+
+COMP 346 
+ 
+
+ 
+
+TEXTBOOK AND ADDITIONAL COURSE MATERIALS 
+
+• Required textbook(s):  
+
+
+
+ 
+
+Computer Networking; A Top-Down Approach by Jim Kurose and Keith Ross, Pearson 
+Higher Education, 8th Edition, 2020. ISBN-13: 9780135928615.  
+
+*Notes:  
+
+− 7th Edition. ISBN-13: 978-0-13-359414-0, ISBN-10: 0-13-359414-9. is also okay.  
+
+− Other references may be needed/used. 
+
+ 
+
+• Instructor’s lecture notes: will be posted in Moodle course management site 
+
+ 
+ 
+ 
+
+GRADING POLICY 
+
+Evaluation Tool Weight 
+
+Midterm 20% 
+
+Final 50% 
+
+Lab assignments 20% 
+
+Theoretical assignment 10% 
+
+Total 100% 
+
+Passing Criteria: 
+
+Students must pass the mid-term and the final exam to pass the course. There is no substitution for a 
+missed exam. 
+
+Important Dates 
+
+• Theoretical assignment 1 January 27th, 2023 
+
+• Theoretical assignment 2 February 17th, 2023 
+
+• Theoretical assignment 3 March 17th, 2023 
+
+• Theoretical assignment 4 April 7th, 2023 
+
+• Lab assignment 1 February 10th, 2023  
+
+• Lab assignment 2 March 24th, 2023  
+
+• Lab assignment 3 April 14th, 2023 
+
+• The midterm is scheduled on February 22th, 2023, starting at 1:15 PM (section W) and 
+February 23th, 2023 starting at 1:15 PM (section M). 
+
+• The final will be a three-hour examination during the examination period on a date to be 
+announced later 
+
+ 
+
+ 
+ 
+
+GRADUATE ATTRIBUTES: SKILLS TO LEARN AND/OR UTILIZE  
+
+Graduate Attribute Indicators 
+
+
+
+ 
+
+Knowledge base for engineering: Knowledge of 
+network architectures: OSI and Internet models. Link 
+layer: error detection, multiple access protocols, 
+addressing. Local area networks: Ethernet, ATM, 
+switches, and hubs. Network layer: forwarding and 
+routing, IP, routing algorithms, multicast. Transport 
+layer: connectionless and connection‑oriented 
+transport, reliable data transport, congestion control, 
+QoS, UDP and TCP. Application layer: DNS, the web 
+and http, file transfer, and email. Introduction to 
+network security, multimedia protocols and wireless 
+networking. 
+
+1.3: Knowledge-base in a specific domain. 
+
+Problem analysis: Use mathematical modeling to 
+analyze networking metrics such as bandwidth, 
+throughput, delay, etc 
+
+2.2: Modeling. 
+
+Design: Develop simple system software applications 
+related to the operation of computer networks, such as 
+protocols, routing, security, etc. 
+
+4.1: Problem identification and 
+information gathering. 
+
+4.3: Architectural and detailed design 
+
+4.4: Implementation and validation 
+
+Use of Engineering Tools: Make educated choices as 
+to what data structures and algorithms to use to solve 
+problems following their respective strengths and 
+constraints 
+
+5.1: Ability to use appropriate tools, 
+techniques, and resources. 
+
+ 
+ 
+ 
+
+COURSE LEARNING OUTCOMES (CLOS) 
+By the end of this course students will be able to: 
+ 
+
+Course Learning Outcome Relationship to Graduate Attributes 
+
+A. Clearly explain the major components of a computer 
+
+network and the Internet 
+
+➢ Knowledge base for engineering 
+
+B. Explain the functions and protocols involved in the 
+
+different layers of the OSI model and the TCP/IP 
+
+stack 
+
+➢ Knowledge base for engineering 
+ 
+
+C. Describe the operation of networking protocols and 
+
+perform basic performance analysis 
+
+➢ Knowledge base for engineering 
+➢ Problem analysis 
+
+D. Develop network-based applications and networking 
+
+protocols 
+
+➢ Problem analysis 
+➢ Design 
+➢ Use of Engineering Tools 
+
+E. Identify recent advances in modern networking, 
+
+mobile networks, and security 
+
+➢ Knowledge base for engineering 
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+TENTATIVE COURSE OUTLINE 
+
+Topics Week 
+
+Outline, Introduction 1 
+
+Introduction, Application Layer 2 
+
+Application Layer 3 
+
+Application Layer, Transport Layer 4 
+
+Transport Layer 5 
+
+Transport Layer, Recap 6 
+
+Midterm, Data plane 7 
+
+Data plane, Control plane 8 
+
+Control plane 9 
+
+Control plane, Link Layer 10 
+
+Link Layer 11 
+
+Link Layer, Wireless Networks 12 
+
+Wireless Networks, Security 13 
+
+ 
+ 
+ 
+
+Other Notes 
+
+Lab Assignments: This course has a scheduled laboratory of two hours per week. There will be a total 
+of three (3) lab assignments. Students must submit and pass at least two (2) of the three (3) assignments 
+to pass the course. It is allowed to work individually or in a team of a maximum of two people. A team 
+will submit only one copy of the assignment by one of the members. Please see the submission format 
+below. 
+
+A demo for about 10 minutes will take place with the marker. All group members must attend the 
+demo and explain their work to the marker. Different marks may be assigned to teammates based on 
+this demo. The schedule of the demos will be determined and announced by the markers, and students 
+must contact the marker to reserve their time slot.   
+
+Demos are mandatory. The marking is subject to the following rules: 
+
+
+
+ 
+
+• If you fail your demo appointment, a zero mark is assigned regardless of your submission 
+
+• If you book a demo appointment and do not show up (for whatever reason), you will be allowed 
+to reschedule a second demo with a grading penalty of 50% 
+
+• Failing to demo at the second appointment will result in zero marks, and no more chances will 
+be given under any conditions 
+
+ 
+
+Theoretical Assignments: There will be a total of four (4) theoretical assignments. The main purpose 
+behind these assignments is to provide students with good preparation for the final. While discussion 
+of the assigned problems among students is encouraged, each student is to solve and submit the 
+assignments independently. For each theoretical assignment, we pick a random question to mark. 
+Besides a correct answer for the selected question, the submission must be complete (i.e., all questions 
+answered) to get full marks. Late assignments will not be accepted. 
+ 
+
+ 
+
+Mid-term and final exams: In general, students will need to bring their own ENCS calculator to the 
+exams. Both the mid-term and the final will be closed-book examinations. The final exam will cover 
+material from the entire course, including lectures, textbook, and assignments. 
+
+ 
+
+Grading: There is no standard relationship between percentages and the final letter grades. For 
+reasons of fairness, we may choose to scale up/down the marks in a particular exam or assignment 
+to ensure that all aspects of the course receive a fair weight. Before the final grades are assessed, 
+any such "fine-tuning" will be made known to students. 
+
+ 
+
+Assignments' submission format: All assignments will be published in Moodle (no hard copies 
+will be distributed in class). Students will have to submit their assignments (one copy per group for 
+the Lab assignments) using Moodle. Assignments uploaded to an incorrect folder in Moodle will 
+not be marked, resulting in a zero mark. No resubmissions will be allowed. Submissions outside 
+Moodle will not be processed.  
+
+ 
+Format: The assignments need to be typed. Hand-written (or scanned) assignments will be rejected. 
+All assignment-related submissions must be adequately archived in a ZIP file using the student(s) 
+ID(s) and last name(s) as the file name. The submission itself must also contain the student(s) 
+name(s) and student ID(s). Use "official" names only - no abbreviations or nicknames; capitalize the 
+usual "last" name. 
+
+Content Delivery, Materials, and Resources: Lectures will follow the standard term schedule. 
+However, in the case of switching to an online delivery mode, the instructor will inform students 
+about the methodology for content delivery and lecturing. The course materials will be published in 
+Moodle, including class notes, assignments, important dates, announcements related to the class, 
+and pointers to documents, among others. Course materials are for students’ personal use. personal 
+use.  
+
+ 
+In addition, the faculty web pages have a wealth of information about our computer systems and 
+software, which includes simple user guides and answers to many standard questions. Students are 
+
+
+
+ 
+
+encouraged to explore these help pages. Begin your exploration from the URL: 
+http://www.encs.concordia.ca/helpdesk/faq/faq.php 
+
+ 
+Intellectual property: Content belonging to instructors shared in online courses, including, but not 
+limited to, online lectures, course notes, and video recordings of classes remain the intellectual 
+property of the faculty member. It may not be distributed, published, or broadcast, in whole or in part, 
+without the express permission of the faculty member. Students are also forbidden to use their own 
+means of recording any elements of an online class or lecture without the express permission of the 
+instructor. Any unauthorized sharing of course content may constitute a breach of the Academic Code 
+of Conduct and/or the Code of Rights and Responsibilities. As specified in the Policy on Intellectual 
+Property, the University does not claim ownership or interest in any student IP. All university members 
+retain copyright over their work. 
+ 
+
+  
+
+http://www.encs.concordia.ca/helpdesk/faq/faq.php
+
+
+ 
+
+ON CAMPUS RESOURCES 
+ 
+
+ 
+
+HEALTH SERVICES 
+
+An on-campus health clinic and health promotion center with nurses and 
+doctors. 
+
+SGW 514-848-2424 ext. 3565 
+
+LOY 514-848-2424 ext. 3575 
+
+COUNSELLING AND PSYCHOLOGICAL SERVICES 
+
+Counsellors (licensed mental health professionals) work with students to 
+address their mental health and wellbeing needs. 
+
+SGW 514-848-2424 ext. 3545 
+
+LOY 514 848-2424 ext. 3555 
+
+ACCESS CENTRE FOR STUDENTS WITH DISABILITIES 
+
+Supports students with a variety of disability conditions (including 
+temporary disabilities arising from illness or injury). Students receive 
+academic support for their educational experience at Concordia. 
+
+acsdinfo@concordia.ca 514-848-2424 ext. 3525 
+
+SEXUAL ASSAULT RESOURCE CENTRE 
+
+Provides confidential and non-judgemental support and services to 
+students, staff and faculty of all genders and orientations affected by 
+sexual violence and/or harassment. 
+
+Jennifer Drummond, Coordinator 
+
+jennifer.drummond@concordia.ca sarc@concordia.ca 
+
+514-848-2424 ext. 3353 
+
+STUDENT SUCCESS CENTRE 
+
+Support network from first-year to graduation. You’ll find one-on-one 
+tutors, study groups, workshops as well as learning and career advisors 
+
+514-848-2424, ext. 3921 
+
+DEAN OF STUDENTS 
+
+Supports students to enhance their Concordia experience by engaging 
+in student life outside the classroom. 
+
+Terry Kyle, Manager 
+
+deanofstudents.office@concordia.ca SGW 514-848-2424 ext. 3517 
+
+LOY 514-848-2424 ext. 4239 
+
+ABORIGINAL STUDENT RESOURCE CENTRE 
+
+An on-campus resource for First Nations, Métis and Inuit students that 
+helps them make the most of the many resources available at the 
+university. 
+
+Orenda Konwawennotion Boucher-Curotte, Coordinator 
+
+orenda.boucher@concordia.ca 514-848-2424 ext. 7327 
+
+INTERNATIONAL STUDENTS OFFICE 
+
+Supporting international students with immigration documents, health 
+insurance, social events, and workshops. 
+
+iso@concordia.ca 
+
+514-848-2424 ext. 3515 
+
+STUDENT ADVOCACY OFFICE 
+
+Advocating for students facing charges under 
+
+the Academic Code of Conduct or the Code of Rights and 
+Responsibilities. 
+
+studentadvocates@concordia.ca 514-848-2424, ext. 3992 
+
+MULTI-FAITH & SPIRITUALITY CENTRE 
+
+Provides a home for all those wishing to celebrate the human spirit in the 
+widest sense of the word, through programs, events and a quiet space for 
+reflection. 
+
+Ellie Hummel, Coordinator 
+
+mfsc@concordia.ca 
+
+514-848-2424, ext. 3593 
+
+CAMPUS SECURITY 
+
+Ensures the safety of our members and campus property through 
+prevention, surveillance, intervention, training, and education. Provides 
+emergency medical services. 
+
+security@concordia.ca 514-848-3717 
+
+(dial 1 for urgent situations; dial 2 for non-urgent situations) 
+
+CONCORDIA UNIVERSITY STUDENT PARENTS CENTRE 
+
+An accessible space for student parents to study, share interests and 
+develop a support network. 
+
+Sumaiya Gangat, Coordinator 
+
+cusp@concordia.ca 
+
+514-848-2424, ext. 2431 
+
+ 
+
+ 
+ 
+ 
+ 
+
+mailto:acsdinfo@concordia.ca
+mailto:jennifer.drummond@concordia.ca
+mailto:sarc@concordia.ca
+mailto:deanofstudents.office@concordia.ca
+mailto:orenda.boucher@concordia.ca
+mailto:iso@concordia.ca
+mailto:studentadvocates@concordia.ca
+mailto:mfsc@concordia.ca
+mailto:security@concordia.ca
+mailto:cusp@concordia.ca
+
+
+ 
+
+ACADEMIC HONESTY AND CODE OF CONDUCT  
+
+Violation of the Academic Code of Conduct in any form will be severely dealt with. This includes 
+copying (even with modifications) of program segments. You must demonstrate independent 
+thought through your submitted work. The Academic Code of Conduct of Concordia University is 
+available at:  
+http://www.concordia.ca/students/academic-integrity/offences.html 
+ 
+It is expected that during class discussions and in your written assignments you will communicate 
+constructively and respectfully. Sexist, racist, homophobic, ageist, and ablest expressions will not be 
+tolerated. 
+
+ 
+
+ADDENDUM 
+ 
+
+ACADEMIC CONDUCT ISSUES THAT APPLY IN GENERAL 
+The basic ten rules that make you a good engineer 
+
+ 
+The B. Eng. program is set to satisfy most of the requirements for your education and prepares you for a 
+
+professional engineering career that requires dedication and knowledge. What you learn, and how you 
+learn, will be used extensively in your engineering profession for the next 30 to 40 years. Therefore, the 
+four years spent in the engineering program are crucial towards your professional formation. The first 
+step is for you to learn to “think like an engineer” which means: 
+
+ 
+
+• accept responsibility for your own learning  
+
+• follow up on lecture material and homework  
+
+• learn problem-solving skills, not just how to solve each specific homework problem  
+
+• build a body of knowledge integrated throughout your program 
+
+• behave responsibly, ethically and professionally 
+ 
+One of the mainstays of being a professional engineer is a professional code of conduct and as an 
+
+engineering student this starts with the Academic Code of Conduct (Article 16.3.14 of the undergraduate 
+calendar). However, you may encounter situations that fall outside the norm and in such cases, you use 
+your common sense. 
+
+ 
+Further, the following issues should be given serious consideration: 
+ 
+1) Attendance at lectures and tutorials are major learning opportunities and should not be missed. The 
+
+labs represent a unique opportunity for you to acquire practical knowledge that you will need in your 
+career. Class and tutorial attendance is important for you to comprehend the discipline and make the 
+connections between engineering skills. You are strongly encouraged to participate in the class, ask 
+questions and answer the instructor’s questions. Tutorials are just extensions of the classes in which 
+application of the concepts presented during the lectures are presented and problems are practically 
+solved. 
+
+  
+2) The decision to write tests that are not mandatory is entirely yours. For example, midterm test are 
+
+often stated in many courses as optional. However, one the objectives of midterms is to check on your 
+
+http://www.concordia.ca/students/academic-integrity/offences.html
+
+
+ 
+
+comprehension of the material and allow time for whatever action is necessary (from more study time 
+to discontinuing a course). Plan to attend the class tests even if they are not mandatory. If you pay 
+attention in the lectures, it will take you significantly shorter time to comprehend the material. Note 
+also that if you are in the unfortunate position of being unable to write a final exam due to medical 
+reasons and seek a deferral, this may not be possible if the instructor has no information indicating that 
+you have been attending the course and assimilating the material (ie through midterms, quizzes, 
+assignments etc). 
+
+ 
+3) Homework is usually mandatory and it has some weight in the final grade (such information is given 
+
+in the course outline). Homework may also be conceived as training material for the class tests. Under 
+all circumstances, it is highly recommended to carry out the home work on time and submit it on the 
+prescribed date. Late submissions are not granted to individual cases regardless of the reason. This is 
+part of the training for being in the workforce where deadlines have to be met. Please, plan your work 
+such that you submit all the assignments and lab reports on time and in the correct place (not in the 
+corridor or on the street!). 
+
+ 
+4) Office hours with tutors, lab instructors or class instructors are listed in the course 
+
+outline/website/office doors. Please respect these office hours and in case you have a serious conflict, 
+contact the instructor asking for a special time arrangement. 
+
+ 
+5) Class tests (assignments, quizzes) are returned to the student. The final exams are not. If you wish 
+
+to see your exam paper, be aware that most instructors allow only a narrow window of time for that 
+purpose. For the fall term, exams may usually be reviewed in January and May for the spring term. 
+
+  
+6) When you see your marked work (assignments, midterms, final exam etc), be aware that you are 
+
+supposed to review your material and see the type of errors you made and if marks have been added 
+incorrectly. This is not an opportunity to try and “negotiate” a higher grade with the instructor. If you 
+believe that your grade is not right, you may apply for a formal Course Reevaluation through the Birks 
+Student Centre. 
+
+ 
+7) Writing tests and exams represents a major component of your course work. These tests and exams 
+
+have rigorous requirements such as: 
+
+• No cell phone or other communication enabling tool is allowed on the student during the examination 
+period. 
+
+• Only specified faculty calculators are allowed during tests and exams unless otherwise indicated by the 
+instructor. 
+
+• Usually, no materials are allowed in the exam unless otherwise announced. 
+Get used to signing in and out of your exam. Make sure that you leave your exam papers with the 
+
+invigilator. There are rules concerning general exam issues in the UG Calendar. These requirements are 
+there to eliminate any possible misunderstanding and you are asked to respect the rules. Disciplinary 
+measures are taken when the rules are not followed. 
+
+  
+8) Respect your colleagues and those that you meet during the class: tutors, instructors, lab 
+
+instructors, technical personnel, assistants, etc. Use appropriate communication means and language. 
+Be considerate for all human beings. This includes small things such as turning off cell-phones before a 
+class begins. Concordia University is a very diverse group of people and a very large multicultural 
+community. 
+
+
+
+ 
+
+  
+9) Communication is part of your future profession. Learn how to communicate effectively and 
+
+efficiently in the shortest time possible. Write short but meaningful e-mails, make effective phone calls, 
+etc. If your instructor accepts emails make sure that your request is clear with the course number and 
+your name in the Subject line. Do not ask for special treatment as instructors have to treat all students 
+equitably. 
+
+ 
+10) Respect all the above and you will get closer to your future profession. 
+
+ 
+
+ 
+ 
+ 
+
+

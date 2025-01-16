@@ -1,0 +1,114 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - about_university
+  - about_topic
+  - about_lecture
+  - about_course_subject_university
+  - about_materials
+  - about_credits
+  - about_additional_resources
+  - about_course_content
+  - about_readings
+  - about_competencies
+  - about_grades
+  - about_students_completed_courses
+  - about_transcripts
+
+entities:
+  - university
+  - topic
+  - course
+  - courseNumber
+  - courseSubject
+  #- lecture
+  - lectureNumber
+  #- lectureContent 
+  - studentID
+  #- IDNumber
+  #- competency
+  #- attempt
+  #- attemptCourse 
+  #- attemptGrade
+  #- grade 
+  #- value
+  #- date
+slots:
+  university:
+    type: text
+    initial_value: "unknown"
+    mappings:
+      - type: from_entity
+        entity: university
+  topic:
+    type: text
+    initial_value: "unknown"
+    mappings:
+      - type: from_entity
+        entity: topic
+  course:
+    type: text
+    initial_value: "unknown"
+    mappings:
+      - type: from_entity
+        entity: course
+  courseNumber:
+    type: text
+    initial_value: "unknown"
+    mappings:
+      - type: from_entity
+        entity: courseNumber
+  courseSubject:
+    type: text
+    initial_value: "unknown"
+    mappings:
+      - type: from_entity
+        entity: courseSubject
+  lectureNumber:
+    type: text
+    initial_value: "unknown"
+    mappings:
+      - type: from_entity
+        entity: lectureNumber
+  studentID:
+    type: text
+    initial_value: "unknown"
+    mappings:
+      - type: from_entity
+        entity: studentID
+
+actions:
+  - action_university_info
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_missing_topics_query:
+  - text: "Sure! Let me find out for you."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

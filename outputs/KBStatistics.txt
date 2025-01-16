@@ -1,0 +1,3 @@
+Total triples in the knowledge base is: 0
+Total courses in the knowledge base is: 0
+Total topics in the knowledge base is: 0

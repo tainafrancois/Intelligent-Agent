@@ -1,0 +1,7244 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.1
+
+Lecture 1
+Intelligent Systems Introduction
+
+COMP 474/6741, Winter 2024
+
+René Witte
+Department of Computer Science
+
+and Software Engineering
+Concordia University
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.2
+
+Outline
+
+1 Introduction
+
+2 Text Mining
+
+3 Knowledge Graphs
+
+4 The Agents are coming
+
+5 Agent AI: From Dumb to Deep
+
+6 Notes and Further Reading
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.3
+
+Outline
+
+1 Introduction
+Motivation
+A First Architecture
+
+2 Text Mining
+
+3 Knowledge Graphs
+
+4 The Agents are coming
+
+5 Agent AI: From Dumb to Deep
+
+6 Notes and Further Reading
+
+
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.5
+
+Architecture 1.0
+
+DocumentsKnowledge Worker
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.6
+
+Towards Intelligent Systems
+
+• Knowledge Graphs
+• Personalization
+• Recommender Systems
+• Text Mining
+• Deep Learning
+• Intelligent Agents
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.7
+
+Why ‘search’ is not enough
+
+Baseline Technology
+
+Full-text search engine (Information Retrieval)
+• Apache Lucene, Solr, Elastic Search, . . .
+
+Task I
+
+Please find all documents and sentences mentioning “Steve Jobs”
+
+Task II
+
+Please find all Persons mentioned in our documents
+
+What you need
+
+Requires Information Extraction (IE) – an example for a Text Mining task
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.7
+
+Why ‘search’ is not enough
+
+Baseline Technology
+
+Full-text search engine (Information Retrieval)
+• Apache Lucene, Solr, Elastic Search, . . .
+
+Task I
+
+Please find all documents and sentences mentioning “Steve Jobs”
+
+Task II
+
+Please find all Persons mentioned in our documents
+
+What you need
+
+Requires Information Extraction (IE) – an example for a Text Mining task
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.7
+
+Why ‘search’ is not enough
+
+Baseline Technology
+
+Full-text search engine (Information Retrieval)
+• Apache Lucene, Solr, Elastic Search, . . .
+
+Task I
+
+Please find all documents and sentences mentioning “Steve Jobs”
+
+Task II
+
+Please find all Persons mentioned in our documents
+
+What you need
+
+Requires Information Extraction (IE) – an example for a Text Mining task
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.8
+
+Natural Language Processing (NLP)
+
+Definition
+
+A branch of Artificial Intelligence (AI) that uses various techniques to process
+content written in a natural language, e.g., English or French.
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.9
+
+Architecture 2.0
+
+Knowledge Worker DocumentsNLP Pipeline
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.10
+
+Text Mining
+
+• NLP tools (e.g., UIMA, GATE, spaCy)
+
+• SaaS (e.g., Amazon Comprehend, Refinitiv)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.11
+
+Named Entity Recognition (Information Extraction)
+
+NLP Pipeline
+
+• Sequence of components
+• Custom or off-the-shelf
+• Rule-based and/or
+
+Machine Learning
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.12
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.13
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.14
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.15
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.16
+
+Recommender Systems and Collaborative Filtering
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.17
+
+Sentiment Analysis (a.k.a. Opinion Mining)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.18
+
+Example using ‘Amazon Comprehend’
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.19
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.20
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.21
+
+Summary I
+
+“Data is the new oil”
+
+Organizations have invaluable knowledge “hidden” in documents:
+• Products, inventions, solutions, techniques, experiences, insights, . . .
+
+NLP/Text Mining can unlock this knowledge
+
+What do you need?
+
+• Need business vision to drive adoption
+• Technology is mature and foundations are open source
+
+E.g., IBM’s UIMA or University of Sheffield’s GATE
+
+Risks
+
+• Increasing legal and ethical concerns
+E.g., Ethical AI, Responsible AI, Explainable AI
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.22
+
+Outline
+
+1 Introduction
+
+2 Text Mining
+
+3 Knowledge Graphs
+Motivation
+Architecture
+Foundations
+Linked Open Data
+Automated Reasoning
+Technology
+Vocabularies
+Summary II
+
+4 The Agents are coming
+
+5 Agent AI: From Dumb to Deep
+
+6 Notes and Further Reading
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.23
+
+Motivation
+
+Common Issue
+
+• Data in Information Silos
+Documents, databases,
+spreadsheets, emails, . . .
+
+• Disconnected, missing knowledge
+
+Knowledge Integration
+
+• Connect silo-ed knowledge
+• Leverage existing, external
+
+Knowledge Bases
+• Freely available, many domains
+• Continuously updated
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.23
+
+Motivation
+
+Common Issue
+
+• Data in Information Silos
+Documents, databases,
+spreadsheets, emails, . . .
+
+• Disconnected, missing knowledge
+
+Knowledge Integration
+
+• Connect silo-ed knowledge
+• Leverage existing, external
+
+Knowledge Bases
+• Freely available, many domains
+• Continuously updated
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.24
+
+Architecture 3.0
+
+Knowledge BaseKnowledge Worker
+
+Linked Open Data (LOD)
+
+NLP Pipeline
+
+Documents
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.25
+
+Knowledge as Graphs
+
+https://www.w3.org/TR/rdf11-primer/
+
+https://www.w3.org/TR/rdf11-primer/
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.26
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.27
+
+The ‘Semantic Web’
+
+https://www.w3.org/TR/rdf11-primer/
+
+https://www.w3.org/TR/rdf11-primer/
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.28
+
+Now in RDF
+
+BASE <http://example.org/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema>
+PREFIX schema: <http://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+
+<bob#me>
+a foaf:Person ;\\
+foaf:knows <alice#me> ;
+schema:birthDate "1990-07-04"^^xsd:date ;
+foaf:topic\_interest wd:Q12418 .
+
+wd:Q12418
+dcterms:title "Mona Lisa" ;
+dcterms:creator <http://dbpedia.org/resource/Leonardo_da_Vinci> .
+
+<http://data.europeana.eu/item/04802/243FA8618938F4117025F17A8B813C5F9AA4D619>
+dcterms:subject wd:Q12418 .
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.29
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.30
+
+DBpedia
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.31
+
+Entity Linking
+
+the efficient computation of the tree architecture ..."
+
+http://dbpedia.org/resource/Tree_(data structure) http://dbpedia.org/resource/Tree
+
+"The proposed approach takes advantage of both
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.32
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.33
+
+The Linked Open Data Cloud
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.33
+
+The Linked Open Data Cloud
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.34
+
+Linking Documents with Knowledge Graphs
+
+
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.36
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.37
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.37
+
+The W3C “Layer Cake”
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.37
+
+Semantic Web
+
+• Enriching content with machine-readable metadata
+• Resource Description Framework (RDF) as a formal language
+• Every statement is a triple: <subject, predicate, object>
+• Offers SPARQL query language
+
+"Bahar Sateli"
+
+"A Personal Research Agent..."
+
+owl:Thing
+
+ex:Document
+
+rdf:type
+
+foaf:Person
+
+rdf:type
+
+ex:Proposal
+
+dc:title rdf:type
+
+ex:Bahar
+
+foaf:name rdf:type dc:creator
+
+SELECT (?name AS ?Name)
+(?title AS ?Title) WHERE {
+
+?person rdf:type foaf:person .
+?person foaf:name ?name .
+?person dc:creator ?proposal .
+?proposal dc:title ?title
+}
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.37
+
+FOAF (Friend-of-a-Friend) Ontology
+
+FOAF
+
+Model people and their
+connections in a social network.
+<foaf:Person>
+
+<foaf:name>Rene Witte</foaf:name>
+<foaf:mbox_sha1sum>
+
+5d5705ff1b2142d62a38061f804f766ffaf806ef
+</foaf:mbox_sha1sum>
+
+</foaf:Person>
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.38
+
+Dublin Core
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.39
+
+Gene Ontology (GO)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.40
+
+Summary II
+
+Overcoming Information Silos
+
+• Knowledge Graphs can integrate different sources within an organization
+(full text, databases, spreadsheets, etc.)
+
+• Automatically manage an organization’s knowledge;
+discover novel insights by combining multiple sources
+
+• External Knowledge Bases to further enrich the data
+
+What do you need?
+
+• State-of-the-art technology: graph databases, triple stores, reasoning engines,
+etc.
+
+• Reasonably mature technology (open source & commercial), many SAAS
+vendors
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.41
+
+Outline
+
+1 Introduction
+
+2 Text Mining
+
+3 Knowledge Graphs
+
+4 The Agents are coming
+Architecture
+Foundations
+History
+
+5 Agent AI: From Dumb to Deep
+
+6 Notes and Further Reading
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.42
+
+Architecture 4.0
+
+Knowledge BaseKnowledge Worker
+
+Linked Open Data (LOD)
+
+NLP Pipeline
+
+Documents
+
+Personal Agent
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.43
+
+Intelligent Conversational Agents
+
+• A software program that can interpret and
+respond to statements made by users in a
+natural language
+
+• Different types of chatbots
+• Generic vs. Goal-oriented
+• Retrieval vs. Generative (Deep Learning)
+
+• Similar architecture, different stacks
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.43
+
+Intelligent Conversational Agents
+
+• A software program that can interpret and
+respond to statements made by users in a
+natural language
+
+• Different types of chatbots
+• Generic vs. Goal-oriented
+• Retrieval vs. Generative (Deep Learning)
+
+• Similar architecture, different stacks
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.43
+
+Intelligent Conversational Agents
+
+• A software program that can interpret and
+respond to statements made by users in a
+natural language
+
+• Different types of chatbots
+• Generic vs. Goal-oriented
+• Retrieval vs. Generative (Deep Learning)
+
+• Similar architecture, different stacks
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.44
+
+Brief History of Chatbots
+
+Turing Test: “A truly intelligent machine would be
+indistinguishable from a human” (A. Turing, 1950)
+
+Early chatbots were developed by scientists:
+
+• MIT Eliza (1966), the psychotherapist bot
+
+• Stanford Parry (1972), the schizophrenic patient
+
+• A.L.I.C.E (1995), the companion AI
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.44
+
+Brief History of Chatbots
+
+Turing Test: “A truly intelligent machine would be
+indistinguishable from a human” (A. Turing, 1950)
+
+Early chatbots were developed by scientists:
+
+• MIT Eliza (1966), the psychotherapist bot
+
+• Stanford Parry (1972), the schizophrenic patient
+
+• A.L.I.C.E (1995), the companion AI
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.44
+
+Brief History of Chatbots
+
+Turing Test: “A truly intelligent machine would be
+indistinguishable from a human” (A. Turing, 1950)
+
+Early chatbots were developed by scientists:
+
+• MIT Eliza (1966), the psychotherapist bot
+
+• Stanford Parry (1972), the schizophrenic patient
+
+• A.L.I.C.E (1995), the companion AI
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.45
+
+Brief History of Chatbots (cont.)
+
+Tech companies join the bot development:
+
+Apple Siri (2010)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.45
+
+Brief History of Chatbots (cont.)
+
+Tech companies join the bot development:
+
+Apple Siri (2010)
+
+IBM Watson (2011)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.45
+
+Brief History of Chatbots (cont.)
+
+Tech companies join the bot development:
+
+Apple Siri (2010)
+
+IBM Watson (2011)
+
+Google Assistant (2012)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.45
+
+Brief History of Chatbots (cont.)
+
+Tech companies join the bot development:
+
+Apple Siri (2010)
+
+IBM Watson (2011)
+
+Google Assistant (2012)
+
+Amazon Alexa (2015)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.45
+
+Brief History of Chatbots (cont.)
+
+Tech companies join the bot development:
+
+Apple Siri (2010)
+
+IBM Watson (2011)
+
+Google Assistant (2012)
+
+Amazon Alexa (2015)
+
+Microsoft Cortana (2015)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.45
+
+Brief History of Chatbots (cont.)
+
+Tech companies join the bot development:
+
+Apple Siri (2010)
+
+IBM Watson (2011)
+
+Google Assistant (2012)
+
+Amazon Alexa (2015)
+
+Microsoft Cortana (2015)
+
+Microsoft Tay (2016)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.45
+
+Brief History of Chatbots (cont.)
+
+Tech companies join the bot development:
+
+Apple Siri (2010)
+
+IBM Watson (2011)
+
+Google Assistant (2012)
+
+Amazon Alexa (2015)
+
+Microsoft Cortana (2015)
+
+Microsoft Tay (2016)
+
+Microsoft Zo (2016)
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.46
+
+The Chatbots Landscape
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.46
+
+The Chatbots Landscape
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.46
+
+The Chatbots Landscape
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.46
+
+The Chatbots Landscape
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.47
+
+AI becomes a business case
+
+• “Top 5 Emerging Technologies in 2018”
+(Gartner)
+
+• Global Market to reach $1-3B by 2025,
+CAGR of 25-40%
+
+• Huge benefits across the value chain:
+• Sales & Marketing
+• HR & Operations
+• Service & Payment
+• Retention & Growth
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.47
+
+AI becomes a business case
+
+• “Top 5 Emerging Technologies in 2018”
+(Gartner)
+
+• Global Market to reach $1-3B by 2025,
+CAGR of 25-40%
+
+• Huge benefits across the value chain:
+• Sales & Marketing
+• HR & Operations
+• Service & Payment
+• Retention & Growth
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.48
+
+Outline
+
+1 Introduction
+
+2 Text Mining
+
+3 Knowledge Graphs
+
+4 The Agents are coming
+
+5 Agent AI: From Dumb to Deep
+Rule-Based
+Grounding-Based
+Retrieval-Based
+Generative-Based
+Summary
+
+6 Notes and Further Reading
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.49
+
+Summary of Chatbot Approaches
+
+Copyright 2019 by Manning Publications Co., [LHH19]
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.50
+
+Eliza (1966)
+
+How does Eliza work?
+
+See Weizenbaum’s paper at:
+http://www.universelle-automation.de/1966_Boston.pdf
+
+“Input sentences are analyzed on the basis of decomposition rules which
+are triggered by key words appearing in the input text. Responses are gen-
+erated by reassembly rules associated with selected decomposition rules.”
+
+http://www.universelle-automation.de/1966_Boston.pdf
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.51
+
+Eliza Example
+
+Eliza + DOCTOR script
+
+If the input sentence is:
+I am very unhappy these days.
+
+Eliza’s response will be:
+How long have you been very unhappy these days?
+
+Processing
+
+Keyword:
+I am
+
+Decomposition pattern:
+I am <whatever>
+
+Reassembly Pattern:
+How long have you been <whatever>?
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.52
+
+Watson and the Jeopardy! Competition (2011)
+
+https://www.youtube.com/watch?v=P18EdAKuC1U
+
+https://www.youtube.com/watch?v=P18EdAKuC1U
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.53
+
+IBM Watson
+
+Watson is a type of question-answering (QA) system, first developed 2006–2011
+
+2011 Jeopardy! competition: 2,880 POWER7 threads and 16 terabytes of RAM
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.54
+
+Transformer Architecture (2017)
+
+The Illustrated Transformer, http://jalammar.github.io/illustrated- transformer/
+
+[Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz
+Kaiser, and Illia Polosukhin. “Attention is all you need.” Advances in neural information processing
+systems 30 (2017). https://papers.neurips.cc/paper/7181-attention-is-all-you-need.pdf]
+
+http://jalammar.github.io/illustrated-transformer/
+https://papers.neurips.cc/paper/7181-attention-is-all-you-need.pdf
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.55
+
+Open Source BERT
+
+https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html
+
+https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.56
+
+BERT in Google Search (I)
+
+https://www.blog.google/products/search/search-language-understanding-bert
+
+https://www.blog.google/products/search/search-language-understanding-bert
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.57
+
+BERT in Google Search (II)
+
+Started rollout for English Google search in October 21, 2019
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.58
+
+Model size comparison
+
+https://devblogs.nvidia.com/training-bert-with-gpus/
+
+https://devblogs.nvidia.com/training-bert-with-gpus/
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.59
+
+GPT-2: The “unicorn” example
+
+Human Input
+
+“In a shocking finding, scientist discovered a herd of unicorns living in a remote,
+previously unexplored valley, in the Andes Mountains. Even more surprising to the
+researchers was the fact that the unicorns spoke perfect English.”
+
+GPT-2 Generated Output
+
+“The scientist named the population, after their distinctive horn, Ovid’s Unicorn.
+These four-horned, silver-white unicorns were previously unknown to science.
+
+Now, after almost two centuries, the mystery of what sparked this odd phenomenon
+is finally solved.
+
+Dr. Jorge Pérez, an evolutionary biologist from the University of La Paz, and several
+companions, were exploring the Andes Mountains when they found a small valley,
+with no other animals or humans. Pérez noticed that the valley had what appeared
+to be a natural fountain, surrounded by two peaks of rock and silver snow.
+
+Pérez and the others then ventured further into the valley. “By the time we reached
+the top of one peak, the water looked blue, with some crystals on top,” said Pérez.”
+...
+
+See https://openai.com/blog/better-language-models/#sample1
+
+https://openai.com/blog/better-language-models/#sample1
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.59
+
+GPT-2: The “unicorn” example
+
+Human Input
+
+“In a shocking finding, scientist discovered a herd of unicorns living in a remote,
+previously unexplored valley, in the Andes Mountains. Even more surprising to the
+researchers was the fact that the unicorns spoke perfect English.”
+
+GPT-2 Generated Output
+
+“The scientist named the population, after their distinctive horn, Ovid’s Unicorn.
+These four-horned, silver-white unicorns were previously unknown to science.
+
+Now, after almost two centuries, the mystery of what sparked this odd phenomenon
+is finally solved.
+
+Dr. Jorge Pérez, an evolutionary biologist from the University of La Paz, and several
+companions, were exploring the Andes Mountains when they found a small valley,
+with no other animals or humans. Pérez noticed that the valley had what appeared
+to be a natural fountain, surrounded by two peaks of rock and silver snow.
+
+Pérez and the others then ventured further into the valley. “By the time we reached
+the top of one peak, the water looked blue, with some crystals on top,” said Pérez.”
+...
+
+See https://openai.com/blog/better-language-models/#sample1
+
+https://openai.com/blog/better-language-models/#sample1
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.60
+
+Another example...
+
+Human Input
+
+“For today’s homework assignment, please describe the reasons for the US Civil
+War.”
+
+GPT-2 Generated Output
+
+“It is easy to identify why the Civil War happened, because so many people and so
+many books and so much television and films tell us that it was the cause, that it
+has something to do with race or economics or religion. There is much agreement
+that it was essentially a war of slavery on behalf of capitalism, about a century of
+slavery. But that’s not what most people think of when they think of the Civil War.
+Many people think of the war as about states rights. You’re not wrong about that,
+but it’s kind of misleading to say that the Civil War was a conflict between states’
+rights and federalism. So let’s try again. What’s the idea that has inspired so many
+people to go onto the battlefields of Gettysburg and Antietam and Gettysberg and
+Petersburg and Fredericksburg? The American idea of the republic–a notion of
+limited government–is a great part of the history....”
+
+See https://openai.com/blog/better-language-models/#sample6
+
+https://openai.com/blog/better-language-models/#sample6
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.60
+
+Another example...
+
+Human Input
+
+“For today’s homework assignment, please describe the reasons for the US Civil
+War.”
+
+GPT-2 Generated Output
+
+“It is easy to identify why the Civil War happened, because so many people and so
+many books and so much television and films tell us that it was the cause, that it
+has something to do with race or economics or religion. There is much agreement
+that it was essentially a war of slavery on behalf of capitalism, about a century of
+slavery. But that’s not what most people think of when they think of the Civil War.
+Many people think of the war as about states rights. You’re not wrong about that,
+but it’s kind of misleading to say that the Civil War was a conflict between states’
+rights and federalism. So let’s try again. What’s the idea that has inspired so many
+people to go onto the battlefields of Gettysburg and Antietam and Gettysberg and
+Petersburg and Fredericksburg? The American idea of the republic–a notion of
+limited government–is a great part of the history....”
+
+See https://openai.com/blog/better-language-models/#sample6
+
+https://openai.com/blog/better-language-models/#sample6
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.61
+
+GPT-2 Release Controversy
+
+Initial Announcement
+
+• OpenAI announced GPT-2 in February 14, 2019
+https://openai.com/blog/better-language-models/
+
+• They initially refused to make the model or training data public, saying that it is
+too dangerous, with potential misuse for generating fake news or for phishing
+purposes, identity theft, manipulation of social media content, etc.
+
+• This was harshly criticized by many members of the research community
+
+https://anima-ai.org/2019/02/18/an-open-and-shut-case-on-openai/
+
+GPT-2 Release
+
+GPT-2 was finally released on November 5, 2019:
+https://openai.com/blog/gpt-2-1-5b-release/
+
+https://openai.com/blog/better-language-models/
+https://anima-ai.org/2019/02/18/an-open-and-shut-case-on-openai/
+https://openai.com/blog/gpt-2-1-5b-release/
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.61
+
+GPT-2 Release Controversy
+
+Initial Announcement
+
+• OpenAI announced GPT-2 in February 14, 2019
+https://openai.com/blog/better-language-models/
+
+• They initially refused to make the model or training data public, saying that it is
+too dangerous, with potential misuse for generating fake news or for phishing
+purposes, identity theft, manipulation of social media content, etc.
+
+• This was harshly criticized by many members of the research community
+
+https://anima-ai.org/2019/02/18/an-open-and-shut-case-on-openai/
+
+GPT-2 Release
+
+GPT-2 was finally released on November 5, 2019:
+https://openai.com/blog/gpt-2-1-5b-release/
+
+https://openai.com/blog/better-language-models/
+https://anima-ai.org/2019/02/18/an-open-and-shut-case-on-openai/
+https://openai.com/blog/gpt-2-1-5b-release/
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.62
+
+GPT-3
+
+OpenAI’s GPT-3 & ChatGPT
+
+Introduced in a July 2020 paper (https://arxiv.org/pdf/2005.14165.pdf)
+• 96 layers and 175 billion parameters
+• cost to train: est. $5 million
+• cost to run (yearly cloud costs): est. $87,000
+
+See https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model/
+
+Now fully commercial
+
+• OpenAI moved from non-profit to for-profit in 2019
+• GPT-3 is only available via paid cloud API
+• Microsoft exclusively licensed the GPT-3 source code
+
+https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/
+
+https://arxiv.org/pdf/2005.14165.pdf
+https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model/
+https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.62
+
+GPT-3
+
+OpenAI’s GPT-3 & ChatGPT
+
+Introduced in a July 2020 paper (https://arxiv.org/pdf/2005.14165.pdf)
+• 96 layers and 175 billion parameters
+• cost to train: est. $5 million
+• cost to run (yearly cloud costs): est. $87,000
+
+See https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model/
+
+Now fully commercial
+
+• OpenAI moved from non-profit to for-profit in 2019
+• GPT-3 is only available via paid cloud API
+• Microsoft exclusively licensed the GPT-3 source code
+
+https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/
+
+https://arxiv.org/pdf/2005.14165.pdf
+https://bdtechtalks.com/2020/09/21/gpt-3-economy-business-model/
+https://openai.com/blog/openai-licenses-gpt-3-technology-to-microsoft/
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.63
+
+Model size comparison
+
+https://towardsdatascience.com/gpt-3-the-new-mighty-language-model-from-openai-a74ff35346fc
+
+https://towardsdatascience.com/gpt-3-the-new-mighty-language-model-from-openai-a74ff35346fc
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.64
+
+GPT-3 Tasks
+
+GPT-3 can basically do all NLP tasks
+
+• Generate text
+• Generate code
+• Answer questions
+• Chat
+• Summarization
+• Translate between languages
+• ...
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.65
+
+Google’s PaLM (April 2022)
+Pathways Language Model (PaLM): Scaling to 540 Billion Parameters for Breakthrough Performance
+
+https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html
+
+https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.66
+
+PaLM: Explaining Jokes
+
+https://storage.googleapis.com/pathways-language-model/PaLM-paper.pdf
+
+https://storage.googleapis.com/pathways-language-model/PaLM-paper.pdf
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.67
+
+GPT-3 vs GPT-4: Technical Comparison
+
+Key Technical Specifications
+
+GPT-3
+• Model Size: 175 billion parameters
+• Context Window: 2048 tokens
+• Training Data: Up to October 2019
+• Cost to train: est. $5 million
+• Capabilities: Text generation,
+
+translation, Q&A, etc.
+• Current “free” model in ChatGPT
+
+GPT-4
+• Model Size: Significantly larger
+
+(est. to be ∼1.8 trillion parameters)
+• Context Window: 8000 to 32000
+
+tokens
+• Training Data: est. ∼13 trillion tokens
+• Capabilities: Enhanced language
+
+understanding, reasoning, etc.
+• Current “pro” model in ChatGPT
+
+https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/
+
+https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.68
+
+Build your own ChatGPT (January 2024)
+
+https://chat.openai.com/gpts
+
+https://chat.openai.com/gpts
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.69
+
+Chatbots: The Business Case
+
+What do you need?
+
+• Specify the business case
+• Define concrete use cases
+• Determine KPIs and evaluate
+• Re-envision Risk Management
+
+• Select a vendor or develop in-house
+• Be aware of the bot lifecycle
+
+Summary
+
+• “Hot” business topic, emerging after decades of research
+• Huge difference in scope (simple rules vs. sophisticated reasoning)
+• Again, new legal and ethical issues
+
+E.g., bots pretending to be human, political campaigning, medical advice
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.70
+
+A fun application: Chatting Robots
+
+https://www.youtube.com/watch?v=djzOBZUFzTw
+
+https://www.youtube.com/watch?v=djzOBZUFzTw
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.71
+
+Outline
+
+1 Introduction
+
+2 Text Mining
+
+3 Knowledge Graphs
+
+4 The Agents are coming
+
+5 Agent AI: From Dumb to Deep
+
+6 Notes and Further Reading
+
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.72
+
+Reading Material
+
+Required
+
+• Introduction to Artificial Intelligence,
+https://plato.stanford.edu/entries/artificial-intelligence/
+
+• Eliza, https://en.wikipedia.org/wiki/ELIZA
+• IBM Watson, https://en.wikipedia.org/wiki/Watson_(computer)
+
+Supplemental
+
+• 155 chatbots in this brand new landscape. Where does your bot fit?
+https://venturebeat.com/2017/06/26/
+bot-analytics-platform-releases-new-chatbot-landscape/
+
+• Ultimate Guide to Leveraging NLP & Machine Learning for your Chatbot,
+https://chatbotslife.com/
+ultimate-guide-to-leveraging-nlp-machine-learning-for-you-chatbot-531ff2dd870c
+
+• The AI Behind Watson, http://www.aaai.org/Magazine/Watson/watson.php
+
+https://plato.stanford.edu/entries/artificial-intelligence/
+https://en.wikipedia.org/wiki/ELIZA
+https://en.wikipedia.org/wiki/Watson_(computer)
+https://venturebeat.com/2017/06/26/bot-analytics-platform-releases-new-chatbot-landscape/
+https://venturebeat.com/2017/06/26/bot-analytics-platform-releases-new-chatbot-landscape/
+https://chatbotslife.com/ultimate-guide-to-leveraging-nlp-machine-learning-for-you-chatbot-531ff2dd870c
+https://chatbotslife.com/ultimate-guide-to-leveraging-nlp-machine-learning-for-you-chatbot-531ff2dd870c
+http://www.aaai.org/Magazine/Watson/watson.php
+
+
+René Witte
+
+Introduction
+Motivation
+
+A First Architecture
+
+Text Mining
+Motivation
+
+Foundations
+
+Named Entity Detection
+
+Recommender Systems
+
+Sentiment Analysis
+
+Risks
+
+Summary
+
+Knowledge Graphs
+Motivation
+
+Architecture
+
+Foundations
+
+Linked Open Data
+
+Automated Reasoning
+
+Technology
+
+Vocabularies
+
+Summary II
+
+Intelligent Agents
+Architecture
+
+Foundations
+
+History
+
+AI in Agents
+Rule-Based
+
+Grounding-Based
+
+Retrieval-Based
+
+Generative-Based
+
+Summary
+
+Notes and Further
+Reading
+
+1.73
+
+References
+
+[LHH19] Hobson Lane, Cole Howard, and Hannes Max Hapke.
+Natural Language Processing in Action.
+Manning Publications Co., 2019.
+https://concordiauniversity.on.worldcat.org/oclc/1102387045.
+
+https://concordiauniversity.on.worldcat.org/oclc/1102387045
+
+	Introduction
+	Introduction
+	Motivation
+	A First Architecture
+
+	Text Mining
+	Motivation
+	Foundations
+	Named Entity Detection
+	Recommender Systems
+	Sentiment Analysis
+	Risks
+	Summary
+
+	Knowledge Graphs
+	Motivation
+	Architecture
+	Foundations
+	Linked Open Data
+	Automated Reasoning
+	Technology
+	Vocabularies
+	Summary II
+
+	The Agents are coming
+	Architecture
+	Foundations
+	History
+
+	Agent AI: From Dumb to Deep
+	Rule-Based
+	Grounding-Based
+	Retrieval-Based
+	Generative-Based
+	Summary
+
+	Notes and Further Reading
+
+

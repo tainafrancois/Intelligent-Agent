@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rbps: <http://roboprof.com/schema#>
+Prefix rbpd: <http://roboprof.com/data#>
+
+SELECT ?additionalResource
+WHERE {
+    ?course rdf:type rbps:Course ;
+            rbps:CourseSubject "BLDG"@en ;
+            rbps:CourseNumber "390"@en ;
+            rdfs:seeAlso ?additionalResource.
+}

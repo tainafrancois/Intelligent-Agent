@@ -1,0 +1,36 @@
+.cassie-cookie-module *{box-sizing:border-box}
+.cassie-cookie-module * p{margin:0}
+.cassie-cookie-module a{color:#0072a8}
+.cassie-cookie-module .cassie-pre-banner.cassie-bottom{flex-wrap:wrap;align-self:flex-end;margin:0;padding:15px 15px 25px 15px;background:#fff;border:0;border-radius:0}
+.cassie-cookie-module .cassie-pre-banner.cassie-bottom .cassie-pre-banner--text{display:flex;align-items:center;width:100%;margin:0 0 20px 0;padding:0 20px 0 0;font:normal 16px/1.6 Arial,sans-serif;color:#000}
+@media(min-width:768px){.cassie-cookie-module .cassie-pre-banner.cassie-bottom .cassie-pre-banner--text{width:60%;margin-bottom:0}
+}
+.cassie-cookie-module .cassie-pre-banner.cassie-bottom .cassie-pre-banner--button--container{flex-wrap:wrap;justify-content:flex-end;align-items:center;width:100%;margin:0}
+@media(min-width:768px){.cassie-cookie-module .cassie-pre-banner.cassie-bottom .cassie-pre-banner--button--container{width:40%}
+}
+.cassie-cookie-module .cassie-pre-banner--button,.cassie-cookie-module .cassie-cookie-modal--save-preferences{display:block;width:auto;min-width:210px;margin:0 auto 10px auto;padding:10px 15px;font:normal 16px 'GillSansMTProBook',sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#912338;border:0 !important;border-radius:0;-webkit-transition:background .2s;-moz-transition:background .2s;-o-transition:background .2s;transition:background .2s}
+@media(min-width:768px){.cassie-cookie-module .cassie-pre-banner--button,.cassie-cookie-module .cassie-cookie-modal--save-preferences{margin:10px 10px 0 0}
+}
+.cassie-cookie-module .cassie-pre-banner--button:hover,.cassie-cookie-module .cassie-cookie-modal--save-preferences:hover{opacity:1;background:#7a1d2e}
+.cassie-cookie-module .cassie-pre-banner--button.cassie-view-all,.cassie-cookie-module .cassie-cookie-modal--save-preferences.cassie-view-all{display:flex;justify-content:center;align-items:center}
+.cassie-cookie-module .cassie-pre-banner--button.cassie-view-all .cassie-view-all--button--icon,.cassie-cookie-module .cassie-cookie-modal--save-preferences.cassie-view-all .cassie-view-all--button--icon{display:inline-block;height:16px;padding-right:5px}
+.cassie-cookie-module .cassie-pre-banner--button.cassie-cookie-modal--save-preferences,.cassie-cookie-module .cassie-cookie-modal--save-preferences.cassie-cookie-modal--save-preferences{min-width:230px;margin:10px 10px 0 0}
+.cassie-cookie-module .cassie-cookie-modal{width:100%;font:normal 16px/1.6 Arial,sans-serif;color:#000;background:#fff;border:0}
+@media(min-width:768px){.cassie-cookie-module .cassie-cookie-modal{width:70%}
+}
+@media(min-width:1200px){.cassie-cookie-module .cassie-cookie-modal{width:60%}
+}
+.cassie-cookie-module .cassie-cookie-modal::-webkit-scrollbar-thumb:hover{background-color:#fff}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-modal--top-header{display:block}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-modal--header-image{max-width:155px;margin:0}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-modal--accept-all--text{font:bold 16px/1.6 Arial,sans-serif}
+.cassie-cookie-module .cassie-cookie-modal .cassie-child-cookie--toggle-switch--slider,.cassie-cookie-module .cassie-cookie-modal .cassie-close-modal-button{display:none}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-group--heading{font:normal 18px 'GillSansMTProMedium',sans-serif;color:#912338}
+.cassie-cookie-module .cassie-cookie-modal .cassie-expand-cookies--container{cursor:default}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-modal--header--content{font:normal 16px/1.6 Arial,sans-serif;border:0}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-modal--header--content p{margin-bottom:10px}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-modal--footer-content{margin:20px 0;font:normal 16px/1.6 Arial,sans-serif}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-group--description{margin-left:1px;font:normal 16px/1.6 Arial,sans-serif}
+.cassie-cookie-module .cassie-cookie-modal .cassie-expand-cookies--icon,.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-children--container{display:none}
+.cassie-cookie-module .cassie-cookie-modal .cassie-toggle-switch--slider--active{background:#198754}
+.cassie-cookie-module .cassie-cookie-modal .cassie-cookie-modal--footer-image--container{display:none}

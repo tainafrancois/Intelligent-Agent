@@ -1,0 +1,13 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rbps: <http://roboprof.com/schema#>
+
+SELECT ?competency ?competencyLabel
+WHERE {
+    ?course rdf:type rbps:Course ;
+            rbps:CourseSubject "COMP"@en;
+            rbps:CourseNumber "474"@en;
+            rbps:CoveredTopic ?competency.
+  
+  	?competency rdfs:label ?competencyLabel.
+}

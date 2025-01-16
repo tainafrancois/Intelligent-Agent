@@ -1,0 +1,21 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rbps: <http://roboprof.com/schema#>
+PREFIX rbpd: <http://roboprof.com/data#>
+
+SELECT ?material ?material_label ?material_type_label
+WHERE {
+  	?material rdf:type ?material_type ;
+             rdfs:label ?material_label.
+  
+  	?material_type rdfs:subClassOf rbps:LectureContent ;
+                   rdfs:label ?material_type_label.
+  
+  	?lecture rbps:hasLectureContent ?material;
+            rbps:TopicLecture rbpd:Machine_learning;
+            rbps:LectureOfCourse ?course.
+  
+  	?course rdf:type rbps:Course ;
+           rbps:CourseSubject "COMP"@en ;
+           rbps:CourseNumber "474"@en.
+}

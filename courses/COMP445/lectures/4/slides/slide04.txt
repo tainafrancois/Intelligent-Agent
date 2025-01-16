@@ -1,0 +1,2761 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft PowerPoint - COMP445_NetLayer_Data
+
+
+1
+
+COMP 445
+Data Communications & Computer networks
+
+COMP 445 – Data Commun. & Computer Networks – S. Céspedes
+
+
+
+Network layer: our goals
+
+understand principles 
+behind network layer 
+services, focusing on data 
+plane:
+• network layer service models
+• forwarding versus routing
+• addressing
+• generalized forwarding
+• Internet architecture
+
+ instantiation, implementation 
+on the Internet
+• IP protocol
+• NAT
+
+Network Layer: 4-2
+
+
+
+Network layer: “data plane” roadmap
+
+ Network layer: overview
+• data plane
+• control plane
+
+ Generalized Forwarding, SDN
+• Match+action
+• OpenFlow: match+action in action
+
+Network Layer: 4-3
+
+ IP: the Internet Protocol
+• datagram format
+• addressing
+• network address translation
+• IPv6
+
+
+
+Network-layer  services and protocols
+
+ transport segment from sending 
+to receiving host 
+• sender: encapsulates segments into 
+
+datagrams, passes to link layer
+• receiver: delivers segments to 
+
+transport layer protocol
+ network layer protocols in every 
+
+Internet device: hosts, routers
+ routers:
+
+• examines header fields in all IP 
+datagrams passing through it
+
+• moves datagrams from input ports to 
+output ports to transfer datagrams 
+along end-end path
+
+mobile network
+
+enterprise
+network
+
+national or global ISP
+
+datacenter 
+network
+
+application
+transport
+network
+
+link
+physical
+
+application
+transport
+network
+
+link
+physical
+
+network
+link
+
+physical
+
+network
+link
+
+physical
+
+network
+link
+
+physical
+
+network
+link
+
+physical network
+link
+
+physical
+
+Network Layer: 4-4
+
+
+
+Two key network-layer functions
+
+network-layer functions:
+ forwarding: move packets from 
+
+a router’s input link to 
+appropriate router output link
+
+analogy: taking a trip
+ forwarding: process of getting 
+
+through single interchange
+
+forwarding
+
+routing
+
+ routing: process of planning trip 
+from source to destination routing: determine route taken 
+
+by packets from source to 
+destination
+• routing algorithms
+
+Network Layer: 4-5
+
+
+
+Network layer: data plane, control plane
+Data plane:
+ local, per-router function
+ determines how datagram 
+
+arriving on router input port 
+is forwarded to router 
+output port
+
+Control plane
+ network-wide logic
+ determines how datagram is 
+
+routed among routers along end-
+end path from source host to 
+destination host
+
+1
+
+2
+3
+
+0111
+
+values in arriving 
+packet header
+
+ two control-plane approaches:
+• traditional routing algorithms: 
+
+implemented in routers
+• software-defined networking (SDN): 
+
+implemented in (remote) servers
+
+Network Layer: 4-6
+
+
+
+Per-router control plane
+Individual routing algorithm components in each and every
+router interact in the control plane
+
+Routing
+Algorithm
+
+data
+plane
+
+control
+plane
+
+1
+
+2
+
+0111
+
+values in arriving 
+packet header
+
+3
+
+Network Layer: 4-7
+
+
+
+Software-Defined Networking (SDN) control plane
+Remote controller computes, installs forwarding tables in routers
+
+data
+plane
+
+control
+plane
+
+Remote Controller
+
+CA
+
+CA CA CA CA
+
+1
+
+2
+
+0111
+
+3
+
+values in arriving 
+packet header
+
+Network Layer: 4-8
+
+
+
+Network service model
+
+example services for 
+individual datagrams:
+
+ guaranteed delivery
+ guaranteed delivery with 
+
+less than 40 msec delay
+
+example services for a flow of 
+datagrams:
+
+ in-order datagram delivery
+ guaranteed minimum bandwidth 
+
+to flow
+ restrictions on changes in inter-
+
+packet spacing
+
+Q: What service model for “channel” transporting datagrams 
+from sender to receiver?
+
+Network Layer: 4-9
+
+
+
+Network-layer service model
+
+Network
+Architecture
+
+Internet
+
+ATM
+
+ATM
+
+Internet
+
+Internet
+
+Service
+Model
+
+best effort
+
+Constant Bit Rate
+
+Available Bit Rate
+
+Intserv Guaranteed
+(RFC 1633)
+
+Diffserv (RFC 2475) 
+
+Bandwidth
+
+none
+
+Constant rate
+
+Guaranteed min
+
+yes
+
+possible
+
+Loss
+
+no
+
+yes
+
+no
+
+yes
+
+possibly
+
+Order
+
+no
+
+yes
+
+yes
+
+yes
+
+possibly
+
+Timing
+
+no
+
+yes
+
+no
+
+yes
+
+no
+
+No guarantees on: 
+i. successful datagram delivery to destination
+ii. timing or order of delivery
+iii. bandwidth available to end-end flow
+
+Internet  “best effort” service model
+
+Quality of Service (QoS) Guarantees ?
+
+Network Layer: 4-10
+
+
+
+Network-layer service model
+
+Network
+Architecture
+
+Internet
+
+ATM
+
+ATM
+
+Internet
+
+Internet
+
+Service
+Model
+
+best effort
+
+Constant Bit Rate
+
+Available Bit Rate
+
+Intserv Guaranteed
+(RFC 1633)
+
+Diffserv (RFC 2475) 
+
+Bandwidth
+
+none
+
+Constant rate
+
+Guaranteed min
+
+yes
+
+possible
+
+Loss
+
+no
+
+yes
+
+no
+
+yes
+
+possibly
+
+Order
+
+no
+
+yes
+
+yes
+
+yes
+
+possibly
+
+Timing
+
+no
+
+yes
+
+no
+
+yes
+
+no
+
+Quality of Service (QoS) Guarantees ?
+
+Network Layer: 4-11
+
+
+
+Reflections on best-effort  service:
+ simplicity of mechanism has allowed Internet to be widely deployed 
+
+adopted
+ sufficient provisioning of bandwidth allows performance of real-time 
+
+applications (e.g., interactive voice, video) to be “good enough” for 
+“most of the time”
+
+ replicated, application-layer distributed services (datacenters, content 
+distribution networks) connecting close to clients’ networks, allow 
+services to be provided from multiple locations
+
+ congestion control of “elastic” services helps
+
+It’s hard to argue with success of best-effort service model 
+Network Layer: 4-12
+
+
+
+Q: but what happens if ranges don’t divide up so nicely? 
+
+Destination-based forwarding
+
+3
+
+Network Layer: 4-13
+
+
+
+Longest prefix matching
+
+when looking for forwarding table entry for given 
+destination address, use longest address prefix that 
+matches destination address.
+
+longest prefix match
+
+Destination Address Range
+
+11001000 00010111 00010
+
+11001000 00010111 00011000
+
+11001000 00010111 00011
+
+otherwise
+
+Link interface
+
+0
+
+1
+
+2
+
+3
+
+***********
+
+***********
+
+********
+
+11001000  00010111  00011000  10101010 
+examples:
+
+which interface?
+
+which interface?
+
+11001000  00010111  00010110  10100001 
+
+Network Layer: 4-14
+
+
+
+Longest prefix matching
+
+when looking for forwarding table entry for given 
+destination address, use longest address prefix that 
+matches destination address.
+
+longest prefix match
+
+Destination Address Range
+
+11001000 00010111 00010
+
+11001000 00010111 00011000
+
+11001000 00010111 00011
+
+otherwise
+
+Link interface
+
+0
+
+1
+
+2
+
+3
+
+11001000  00010111  00011000  10101010 
+examples:
+
+which interface?
+
+which interface?
+
+***********
+
+***********
+
+********
+
+11001000  00010111  00010110  10100001 
+
+match!
+
+Network Layer: 4-15
+
+
+
+Longest prefix matching
+
+when looking for forwarding table entry for given 
+destination address, use longest address prefix that 
+matches destination address.
+
+longest prefix match
+
+Destination Address Range
+
+11001000 00010111 00010
+
+11001000 00010111 00011000
+
+11001000 00010111 00011
+
+otherwise
+
+Link interface
+
+0
+
+1
+
+2
+
+3
+
+11001000  00010111  00011000  10101010 
+examples:
+
+which interface?
+
+which interface?
+
+***********
+
+***********
+
+********
+
+11001000  00010111  00010110  10100001 
+match!
+
+Network Layer: 4-16
+
+
+
+Longest prefix matching
+
+when looking for forwarding table entry for given 
+destination address, use longest address prefix that 
+matches destination address.
+
+longest prefix match
+
+Destination Address Range
+
+11001000 00010111 00010
+
+11001000 00010111 00011000
+
+11001000 00010111 00011
+
+otherwise
+
+Link interface
+
+0
+
+1
+
+2
+
+3
+
+11001000  00010111  00011000  10101010 
+examples:
+
+which interface?
+
+which interface?
+
+***********
+
+***********
+
+********
+
+11001000  00010111  00010110  10100001 
+
+match!
+
+Network Layer: 4-17
+
+
+
+ we’ll see why longest prefix matching is used shortly, when 
+we study addressing
+
+ longest prefix matching: often performed using ternary 
+content addressable memories (TCAMs)
+• content addressable: present address to TCAM: retrieve address in 
+
+one clock cycle, regardless of table size
+• Cisco Catalyst:  ~1M routing table entries in TCAM
+
+Longest prefix matching
+
+Network Layer: 4-18
+
+
+
+Network layer: “data plane” roadmap
+
+ Network layer: overview
+• data plane
+• control plane
+
+ Generalized Forwarding, SDN
+• Match+action
+• OpenFlow: match+action in action
+
+Network Layer: 4-19
+
+ IP: the Internet Protocol
+• datagram format
+• addressing
+• network address translation
+• IPv6
+
+
+
+Network Layer: Internet
+
+host, router network layer functions:
+
+IP protocol
+• datagram format
+• addressing
+• packet handling conventions
+
+ICMP protocol
+• error reporting
+• router “signaling”
+
+transport layer: TCP, UDP
+
+link layer
+
+physical layer
+
+network
+layer
+
+forwarding
+table
+
+Path-selection  
+algorithms: 
+implemented in 
+• routing protocols 
+
+(OSPF, BGP)
+• SDN controller
+
+Network Layer: 4-20
+
+
+
+IP Datagram format
+
+ver length
+
+32 bits
+
+payload data 
+(variable length,
+typically a TCP 
+
+or UDP segment)
+
+16-bit identifier
+
+header
+checksum
+
+time to
+live
+
+source IP address
+
+head.
+len
+
+type of
+service
+
+flgs
+fragment
+
+offset
+upper
+layer
+
+destination IP address
+
+options (if any)
+
+IP protocol version number
+
+header length(bytes)
+
+upper layer protocol (e.g., TCP or UDP)
+
+total datagram
+length (bytes)
+
+“type” of service:
+ diffserv (0:5)
+ ECN (6:7)
+
+fragmentation/
+reassembly
+
+TTL: remaining  max hops
+(decremented at each router)
+
+ 20 bytes of TCP
+ 20 bytes of IP
+ = 40 bytes + app 
+
+layer overhead for 
+TCP+IP
+
+overhead e.g., timestamp, record 
+route taken
+
+32-bit source IP address
+
+32-bit destination IP address
+
+header checksum
+
+Maximum length: 64K bytes
+Typically: 1500 bytes or less
+
+Network Layer: 4-21
+
+
+
+ IP address: 32-bit identifier 
+associated with each host or 
+router interface
+
+ interface: connection between 
+host/router and physical link
+
+• router’s typically have multiple 
+interfaces
+
+• host typically has one or two 
+interfaces (e.g., wired Ethernet, 
+wireless 802.11)
+
+IP addressing: introduction
+223.1.1.1
+
+223.1.1.2
+
+223.1.1.3
+
+223.1.1.4 223.1.2.9
+
+223.1.2.2
+
+223.1.2.1
+
+223.1.3.2223.1.3.1
+
+223.1.3.27
+
+223.1.1.1 = 11011111 00000001 00000001 00000001
+
+223 1 11
+
+dotted-decimal IP address notation:
+
+Network Layer: 4-22
+
+
+
+ IP address: 32-bit identifier 
+associated with each host or 
+router interface
+
+ interface: connection between 
+host/router and physical link
+
+• router’s typically have multiple 
+interfaces
+
+• host typically has one or two 
+interfaces (e.g., wired Ethernet, 
+wireless 802.11)
+
+IP addressing: introduction
+223.1.1.1
+
+223.1.1.2
+
+223.1.1.3
+
+223.1.1.4 223.1.2.9
+
+223.1.2.2
+
+223.1.2.1
+
+223.1.3.2223.1.3.1
+
+223.1.3.27
+
+223.1.1.1 = 11011111 00000001 00000001 00000001
+
+223 1 11
+
+dotted-decimal IP address notation:
+
+Network Layer: 4-23
+
+
+
+IP addressing: introduction
+223.1.1.1
+
+223.1.1.2
+
+223.1.1.3
+
+223.1.1.4 223.1.2.9
+
+223.1.2.2
+
+223.1.2.1
+
+223.1.3.2223.1.3.1
+
+223.1.3.27
+
+Q: how are interfaces 
+actually connected?
+
+A: wired 
+Ethernet interfaces 
+connected by 
+Ethernet switches
+
+A: wireless WiFi interfaces 
+connected by WiFi base station
+
+For now: don’t need to worry 
+about how one interface is 
+connected to another (with no 
+intervening router) 
+
+Network Layer: 4-24
+
+
+
+Subnets
+223.1.1.1
+
+223.1.1.2
+
+223.1.1.3
+
+223.1.1.4 223.1.2.9
+
+223.1.2.2
+
+223.1.2.1
+
+223.1.3.2223.1.3.1
+
+223.1.3.27
+
+What’s a subnet ?
+• device interfaces that can 
+
+physically reach each other 
+without passing through an 
+intervening router
+
+network consisting of 3 subnets
+
+ IP addresses have structure:
+• subnet part: devices in same subnet 
+
+have common high order bits
+• host part: remaining low order bits 
+
+Network Layer: 4-25
+
+
+
+Subnets
+223.1.1.1
+
+223.1.1.2
+
+223.1.1.3
+
+223.1.1.4 223.1.2.9
+
+223.1.2.2
+
+223.1.2.1
+
+223.1.3.2223.1.3.1
+
+223.1.3.27
+
+Recipe for defining subnets:
+detach each interface from its 
+
+host or router, creating 
+“islands” of isolated networks
+
+each isolated network is 
+called a subnet
+
+subnet mask: /24
+(high-order 24 bits: subnet part of IP address)
+
+subnet
+223.1.3.0/24
+
+subnet 223.1.1.0/24
+
+subnet 223.1.2.0/24
+
+Network Layer: 4-26
+
+
+
+Subnets
+
+ where are the 
+subnets?
+
+ what are the 
+/24 subnet 
+addresses?
+
+223.1.1.1
+
+223.1.1.3
+
+223.1.1.4
+
+223.1.2.2
+
+223.1.2.6
+
+223.1.3.2223.1.3.1
+
+223.1.3.27
+
+223.1.1.2
+
+223.1.7.0
+
+223.1.7.1
+223.1.8.0223.1.8.1
+
+223.1.9.1
+
+223.1.9.2
+
+223.1.2.1
+
+subnet 223.1.1/24
+
+subnet 223.1.7/24
+
+subnet 223.1.3/24subnet 223.1.2/24
+
+subnet 223.1.9/24
+
+subnet 223.1.8/24
+
+Network Layer: 4-27
+
+
+
+IP addressing: CIDR
+
+CIDR: Classless InterDomain Routing (pronounced “cider”)
+• subnet portion of address of arbitrary length
+• address format: a.b.c.d/x, where x is # bits in subnet portion 
+
+of address
+
+11001000  00010111  00010000  00000000
+
+subnet
+part
+
+host
+part
+
+200.23.16.0/23
+
+Network Layer: 4-28
+
+
+
+IP addresses: how to get one?
+
+That’s actually two questions:
+1. Q: How does a host get IP address within its network (host part of 
+
+address)?
+2. Q: How does a network get IP address for itself (network part of 
+
+address)
+
+How does host get IP address?
+ hard-coded by sysadmin in config file (e.g., /etc/rc.config in UNIX)
+ DHCP: Dynamic Host Configuration Protocol: dynamically get address 
+
+from as server
+• “plug-and-play”
+
+Network Layer: 4-29
+
+
+
+DHCP: Dynamic Host Configuration Protocol
+goal: host dynamically obtains IP address from network server when it
+
+“joins” network
+ can renew its lease on address in use
+ allows reuse of addresses (only hold address while connected/on)
+ support for mobile users who join/leave network 
+
+DHCP overview:
+ host broadcasts DHCP discover msg [optional]
+ DHCP server responds with DHCP offer msg [optional]
+ host requests IP address: DHCP request msg
+ DHCP server sends address: DHCP ack msg 
+
+Network Layer: 4-30
+
+
+
+DHCP client-server scenario
+
+223.1.1.1
+
+223.1.1.2
+
+223.1.1.3
+
+223.1.1.4 223.1.2.9
+
+223.1.2.2
+
+223.1.2.1
+
+223.1.3.2223.1.3.1
+
+223.1.3.27
+
+DHCP server
+
+223.1.2.5
+
+arriving DHCP client needs 
+address in this network
+
+Typically, DHCP server will be  co-
+located in router, serving all subnets 
+to which router is attached
+
+Network Layer: 4-31
+
+
+
+DHCP client-server scenario
+DHCP server: 223.1.2.5 Arriving clientDHCP discover
+
+src : 0.0.0.0, 68     
+dest.: 255.255.255.255,67
+
+yiaddr:    0.0.0.0
+transaction ID: 654
+
+DHCP offer
+
+src: 223.1.2.5, 67      
+dest:  255.255.255.255, 68
+
+yiaddrr: 223.1.2.4
+transaction ID: 654
+lifetime: 3600 secs
+
+DHCP request
+
+src:  0.0.0.0, 68     
+dest::  255.255.255.255, 67
+
+yiaddrr: 223.1.2.4
+transaction ID: 655
+lifetime: 3600 secs
+
+DHCP ACK
+
+src: 223.1.2.5, 67      
+dest:  255.255.255.255, 68
+
+yiaddrr: 223.1.2.4
+transaction ID: 655
+lifetime: 3600 secs
+
+Broadcast: is there a 
+DHCP server out there?
+
+Broadcast: I’m a DHCP 
+server! Here’s an IP 
+address you can use 
+
+Broadcast: OK.  I would 
+like to use this IP address!
+
+Broadcast: OK.  You’ve 
+got that IP address!
+
+The two steps above can 
+be skipped “if a client 
+remembers and wishes to 
+reuse a previously 
+allocated network address” 
+[RFC 2131]
+
+Network Layer: 4-32
+
+
+
+DHCP: more than IP addresses
+DHCP can return more than just allocated IP address on 
+
+subnet:
+ address of first-hop router for client
+ name and IP address of DNS sever
+ network mask (indicating network versus host portion of address)
+
+Network Layer: 4-33
+
+
+
+DHCP: example
+
+ Connecting laptop will use DHCP 
+to get IP address, address of first-
+hop router, address of DNS server.
+
+router with DHCP 
+server built into 
+router
+
+ DHCP REQUEST message encapsulated 
+in UDP, encapsulated in IP, encapsulated 
+in Ethernet
+
+ Ethernet frame broadcast (dest: 
+FFFFFFFFFFFF) on LAN, received at router 
+running DHCP server
+
+ Ethernet demux’ed to IP demux’ed, 
+UDP demux’ed to DHCP 
+
+168.1.1.1
+
+DHCP
+UDP
+
+IP
+Eth
+Phy
+
+DHCP
+
+DHCP
+
+DHCP
+
+DHCP
+
+DHCP
+
+DHCP
+UDP
+
+IP
+Eth
+Phy
+
+DHCP
+
+DHCP
+
+DHCP
+
+DHCPDHCP
+
+Network Layer: 4-34
+
+
+
+DHCP: example
+
+ DCP server formulates DHCP ACK 
+containing client’s IP address, IP 
+address of first-hop router for client, 
+name & IP address of DNS server
+
+ encapsulated DHCP server reply 
+forwarded to client, demuxing up to 
+DHCP at client
+
+router with DHCP 
+server built into 
+router
+
+DHCP
+
+DHCP
+
+DHCP
+
+DHCP
+
+DHCP
+UDP
+
+IP
+Eth
+Phy
+
+DHCP
+
+DHCP
+UDP
+
+IP
+Eth
+Phy
+
+DHCP
+
+DHCP
+
+DHCP
+
+DHCP
+
+ client now knows its IP address, name 
+and IP address of DNS server, IP 
+address of its first-hop router
+
+Network Layer: 4-35
+
+
+
+IP addresses: how to get one?
+Q: how does network get subnet part of IP address?
+A: gets allocated portion of its provider ISP’s address space
+
+ISP's block          11001000  00010111  00010000  00000000    200.23.16.0/20
+
+ISP can then allocate out its address space in 8 blocks: 
+
+Organization 0    11001000  00010111  00010000  00000000    200.23.16.0/23 
+Organization 1    11001000  00010111  00010010  00000000    200.23.18.0/23 
+Organization 2    11001000  00010111  00010100  00000000    200.23.20.0/23 
+
+...                                          …..                                   ….                ….
+
+Organization 7    11001000  00010111  00011110   00000000    200.23.30.0/23
+
+Network Layer: 4-36
+
+
+
+Hierarchical addressing: route aggregation
+
+“Send me anything
+with addresses 
+beginning 
+200.23.16.0/20”
+
+200.23.16.0/23
+
+200.23.18.0/23
+
+200.23.30.0/23
+
+Fly-By-Night-ISP
+
+Organization 0
+
+Organization 7
+Internet
+
+Organization 1
+
+ISPs-R-Us
+“Send me anything
+with addresses 
+beginning 
+199.31.0.0/16”
+
+200.23.20.0/23
+Organization 2
+
+...
+
+...
+
+hierarchical addressing allows efficient advertisement of 
+routing  information:
+
+Network Layer: 4-37
+
+
+
+Hierarchical addressing: more specific routes
+
+“Send me anything
+with addresses 
+beginning 
+200.23.16.0/20”
+
+200.23.16.0/23
+
+200.23.30.0/23
+
+Fly-By-Night-ISP
+
+Organization 0
+
+Organization 7
+Internet
+
+200.23.18.0/23
+Organization 1
+
+ISPs-R-Us
+“Send me anything
+with addresses 
+beginning 
+199.31.0.0/16”
+
+200.23.20.0/23
+Organization 2
+
+...
+
+...
+
+ Organization 1 moves from Fly-By-Night-ISP to ISPs-R-Us
+ ISPs-R-Us now advertises a more specific route to Organization 1
+
+200.23.18.0/23
+Organization 1
+
+“or 200.23.18.0/23”
+
+Network Layer: 4-38
+
+
+
+Hierarchical addressing: more specific routes
+
+“Send me anything
+with addresses 
+beginning 
+200.23.16.0/20”
+
+200.23.16.0/23
+
+200.23.30.0/23
+
+Fly-By-Night-ISP
+
+Organization 0
+
+Organization 7
+Internet
+
+ISPs-R-Us
+“Send me anything
+with addresses 
+beginning 
+199.31.0.0/16”
+
+200.23.20.0/23
+Organization 2
+
+...
+
+...
+
+ Organization 1 moves from Fly-By-Night-ISP to ISPs-R-Us
+ ISPs-R-Us now advertises a more specific route to Organization 1
+
+200.23.18.0/23
+Organization 1
+
+“or 200.23.18.0/23”
+
+Network Layer: 4-39
+
+
+
+IP addressing: last words ...
+Q: how does an ISP get block of 
+
+addresses?
+A: ICANN: Internet Corporation for 
+
+Assigned  Names and Numbers 
+http://www.icann.org/
+• allocates IP addresses, through 5 
+
+regional registries (RRs) (who may 
+then allocate to local registries)
+
+• manages DNS root zone, including 
+delegation of individual TLD (.com, 
+.edu , …) management 
+
+Q: are there enough 32-bit IP 
+addresses?
+
+ ICANN allocated last chunk of 
+IPv4 addresses to RRs in 2011
+
+ NAT (next) helps IPv4 address 
+space exhaustion
+
+ IPv6 has 128-bit address space
+
+"Who the hell knew how much address 
+space we needed?"  Vint Cerf (reflecting 
+on decision to make IPv4 address 32 bits 
+long)
+
+Network Layer: 4-40
+
+
+
+10.0.0.1
+
+10.0.0.2
+
+10.0.0.3
+
+10.0.0.4
+
+local network (e.g., home 
+network) 10.0.0/24
+
+138.76.29.7
+
+rest of
+Internet
+
+NAT: network address translation
+
+datagrams with source or destination in 
+this network have 10.0.0/24 address for  
+source, destination (as usual)
+
+all datagrams leaving local network have 
+same source NAT IP address: 138.76.29.7,  
+
+but different source port numbers
+
+NAT: all devices in local network share just one IPv4 address as 
+far as outside world is concerned
+
+Network Layer: 4-41
+
+
+
+ all devices in local network have 32-bit addresses in a “private” IP 
+address space (10/8, 172.16/12, 192.168/16 prefixes) that can only 
+be used in local network
+
+ advantages:
+ just one IP address needed from provider ISP for all devices
+ can change addresses of host in local network without notifying 
+
+outside world
+ can change ISP without changing addresses of devices in local 
+
+network
+ security: devices inside local net not directly addressable, visible 
+
+by outside world
+
+NAT: network address translation
+
+Network Layer: 4-42
+
+
+
+implementation: NAT router must (transparently):
+ outgoing datagrams: replace (source IP address, port #) of every 
+
+outgoing datagram to (NAT IP address, new port #)
+
+• remote clients/servers will respond using (NAT IP address, new port 
+#) as destination address
+
+ remember (in NAT translation table) every (source IP address, port #)  
+to (NAT IP address, new port #) translation pair
+
+ incoming datagrams: replace (NAT IP address, new port #) in 
+destination fields of every incoming datagram with corresponding 
+(source IP address, port #) stored in NAT table
+
+NAT: network address translation
+
+Network Layer: 4-43
+
+
+
+NAT: network address translation
+
+S: 10.0.0.1, 3345
+D: 128.119.40.186, 80
+
+1
+
+10.0.0.4
+
+138.76.29.7
+
+1: host 10.0.0.1 sends 
+datagram to 
+128.119.40.186, 80
+
+NAT translation table
+WAN side addr        LAN side addr
+
+138.76.29.7, 5001   10.0.0.1, 3345
+……                                         ……
+
+S: 128.119.40.186, 80 
+D: 10.0.0.1, 3345 4
+
+S: 138.76.29.7, 5001
+D: 128.119.40.186, 802
+
+2: NAT router changes 
+datagram source address 
+from 10.0.0.1, 3345 to 
+138.76.29.7, 5001,
+updates table
+
+S: 128.119.40.186, 80 
+D: 138.76.29.7, 5001 3
+
+3: reply arrives, destination 
+address: 138.76.29.7, 5001
+
+10.0.0.1
+
+10.0.0.2
+
+10.0.0.3
+
+Network Layer: 4-44
+
+
+
+ NAT has been controversial:
+• routers “should” only process up to layer 3
+• address “shortage” should be solved by IPv6
+• violates end-to-end argument (port # manipulation by network-layer device)
+
+• NAT traversal: what if client wants to connect to server behind NAT?
+
+ but NAT is here to stay:
+• extensively used in home and institutional nets, 4G/5G cellular  nets
+
+NAT: network address translation
+
+Network Layer: 4-45
+
+
+
+ initial motivation: 32-bit IPv4 address space would be 
+completely allocated  
+
+ additional motivation:
+• speed processing/forwarding: 40-byte fixed length header
+• enable different network-layer treatment of “flows”
+
+IPv6: motivation
+
+Network Layer: 4-46
+
+
+
+IPv6 datagram format
+
+payload (data)
+
+destination address
+(128 bits)
+
+source address
+(128 bits)
+
+payload len next hdr hop limit
+flow labelpriver
+
+32 bits
+priority:  identify 
+
+priority among 
+datagrams in flow
+
+flow label: identify 
+datagrams in same 
+"flow.” (concept of 
+“flow” not well defined).
+
+128-bit 
+IPv6 addresses
+
+What’s missing (compared with IPv4): 
+ no checksum (to speed processing at routers)
+ no fragmentation/reassembly
+ no options (available as upper-layer, next-header protocol at router)
+
+Network Layer: 4-47
+
+
+
+ Google1: ~ 30% of clients access services via IPv6
+ NIST: 1/3 of all US government domains are IPv6 capable
+
+IPv6: adoption
+
+1
+
+https://www.google.com/intl
+/en/ipv6/statistics.html
+
+Network Layer: 4-48
+
+
+
+ Google1: ~ 30% of clients access services via IPv6
+ NIST: 1/3 of all US government domains are IPv6 capable
+ Long (long!) time for deployment, use
+
+• 25 years and counting!
+• think of application-level changes in last 25 years: WWW, social 
+
+media, streaming media, gaming, telepresence, …
+• Why?
+
+IPv6: adoption
+
+1 https://www.google.com/intl/en/ipv6/statistics.html
+Network Layer: 4-49
+
+
+
+Network layer: “data plane” roadmap
+
+ Network layer: overview
+• data plane
+• control plane
+
+ Generalized Forwarding, SDN
+• Match+action
+• OpenFlow: match+action in action
+
+Network Layer: 4-50
+
+ IP: the Internet Protocol
+• datagram format
+• addressing
+• network address translation
+• IPv6
+
+
+
+1
+
+2
+
+0111
+
+3
+
+values in arriving 
+packet header
+
+Generalized forwarding: match plus action
+Review:  each router contains a forwarding table 
+ “match plus action” abstraction: match bits in arriving packet, take action
+
+• generalized forwarding: 
+• many header fields can determine action
+• many action possible: drop/copy/modify/log packet
+
+forwarding table
+
+(aka: flow table)
+
+(aka: flow table)
+
+• destination-based forwarding: forward based on dest. IP address
+
+Network Layer: 4-51
+
+
+
+ flow: defined by header field values (in link-, network-, transport-layer fields)
+
+ generalized forwarding: simple packet-handling rules
+• match: pattern values in packet header fields
+• actions: for matched packet: drop, forward, modify, matched packet or send 
+
+matched packet to controller 
+• priority: disambiguate overlapping patterns
+• counters: #bytes and #packets
+
+Flow table abstraction
+
+Router’s flow table define 
+router’s match+action rules
+
+Flow table
+match action
+
+Network Layer: 4-52
+
+
+
+ flow: defined by header fields
+ generalized forwarding: simple packet-handling rules
+
+• match: pattern values in packet header fields
+• actions: for matched packet: drop, forward, modify, matched packet or send 
+
+matched packet to controller 
+• priority: disambiguate overlapping patterns
+• counters: #bytes and #packets
+
+Flow table
+match action
+
+1
+
+2
+3
+
+4
+* : wildcard
+
+src=10.1.2.3, dest=*.*.*.*     send to controller
+src=1.2.*.*, dest=*.*.*.* drop                        
+src = *.*.*.*, dest=3.4.*.*     forward(2)
+
+Flow table abstraction
+
+Network Layer: 4-53
+
+
+
+OpenFlow: flow table entries
+
+Match Action Stats
+
+1. Forward packet to port(s)
+2. Drop packet
+3. Modify fields in header(s)
+4. Encapsulate and forward to controller
+
+Packet + byte counters
+
+Header fields to match:
+
+Ingress 
+Port
+
+Src
+MAC
+
+Dst
+MAC
+
+Eth 
+Type
+
+VLAN
+ID
+
+IP
+ToS
+
+IP 
+ProtoIP Src IP Dst TCP/UDP 
+
+Src Port
+VLAN
+
+Pri
+TCP/UDP 
+Dst Port
+
+Link layer Network layer Transport layer
+Network Layer: 4-54
+
+
+
+OpenFlow: examples
+
+IP datagrams destined to IP address  51.6.0.8 should be forwarded to router output port 6 
+
+Block (do not forward) all datagrams destined to TCP  port 22 (ssh port #)
+
+Block (do not forward) all datagrams sent by host 128.119.1.1
+
+Destination-based forwarding:
+
+* * * * * * 51.6.0.8 * * * port6
+
+Switch
+Port
+
+MAC
+src
+
+MAC
+dst
+
+Eth
+type
+
+VLAN
+ID
+
+IP
+Src
+
+IP
+Dst
+
+IP
+Prot
+
+TCP
+s-port
+
+TCP
+d-port ActionVLAN
+
+Pri
+IP
+
+ToS
+
+**
+
+* * * * * * * * * *
+
+Firewall:
+
+drop
+
+Switch
+Port
+
+MAC
+src
+
+MAC
+dst
+
+Eth
+type
+
+VLAN
+ID
+
+IP
+Src
+
+IP
+Dst
+
+IP
+Prot
+
+TCP
+s-port
+
+TCP
+d-port ActionVLAN
+
+Pri
+IP
+
+ToS
+
+22*
+
+Switch
+Port
+
+MAC
+src
+
+MAC
+dst
+
+Eth
+type
+
+VLAN
+ID
+
+IP
+Src
+
+IP
+Dst
+
+IP
+Prot
+
+TCP
+s-port
+
+TCP
+d-port ActionVLAN
+
+Pri
+IP
+
+ToS
+
+* * * * * * * * * * drop*128.119.1.1
+
+Network Layer: 4-55
+
+
+
+OpenFlow: examples
+Layer 2 destination-based forwarding:
+
+layer 2 frames with destination  MAC address 22:A7:23:11:E1:02 should be forwarded to 
+output port 3 
+
+* * * * * * * * * port322:A7:23:
+11:E1:02 * *
+
+Switch
+Port
+
+MAC
+src
+
+MAC
+dst
+
+Eth
+type
+
+VLAN
+ID
+
+IP
+Src
+
+IP
+Dst
+
+IP
+Prot
+
+TCP
+s-port
+
+TCP
+d-port ActionVLAN
+
+Pri
+IP
+
+ToS
+
+Network Layer: 4-56
+
+
+
+match+action: abstraction unifies different kinds of devices
+
+OpenFlow abstraction
+
+Router
+• match: longest 
+
+destination IP prefix
+• action: forward out a 
+
+link
+Switch
+
+• match: destination MAC 
+address
+
+• action: forward or flood
+
+Firewall
+• match: IP addresses and 
+
+TCP/UDP port numbers
+• action: permit or deny 
+
+NAT
+• match: IP address and port
+• action: rewrite address and 
+
+port
+
+Network Layer: 4-57
+
+
+
+OpenFlow example
+
+Host h1
+10.1.0.1
+
+Host h2
+10.1.0.2
+
+Host h4
+10.2.0.4
+
+Host h3
+10.2.0.3
+
+Host h5
+10.3.0.5
+
+s1 s2
+
+s31
+
+2
+
+3
+4
+
+1
+
+2
+
+3
+4
+
+1
+
+2
+3
+
+4
+
+Host h6
+10.3.0.6
+
+controller
+
+Orchestrated tables can create 
+network-wide behavior, e.g.,:
+ datagrams from hosts h5 and 
+
+h6 should be sent to h3 or h4, 
+via s1 and from there to s2
+
+Network Layer: 4-58
+
+
+
+OpenFlow example
+
+IP Src = 10.3.*.*
+IP Dst = 10.2.*.* forward(3)
+
+match action
+
+ingress port = 2
+IP Dst = 10.2.0.3
+ingress port = 2
+IP Dst = 10.2.0.4
+
+forward(3)
+
+match action
+
+forward(4)
+
+ingress port = 1
+IP Src = 10.3.*.*
+IP Dst = 10.2.*.*
+
+forward(4)
+
+match action
+
+Host h1
+10.1.0.1
+
+Host h2
+10.1.0.2
+
+Host h4
+10.2.0.4
+
+Host h3
+10.2.0.3
+
+Host h5
+10.3.0.5
+
+s1 s2
+
+s31
+
+2
+
+3
+4
+
+1
+
+2
+
+3
+4
+
+1
+
+2
+3
+
+4
+
+Host h6
+10.3.0.6
+
+controller
+
+Orchestrated tables can create 
+network-wide behavior, e.g.,:
+ datagrams from hosts h5 and 
+
+h6 should be sent to h3 or h4, 
+via s1 and from there to s2
+
+Network Layer: 4-59
+
+
+
+Generalized forwarding: summary
+ “match plus action” abstraction: match bits in arriving packet header(s) in 
+
+any layers, take action
+• matching over many fields (link-, network-, transport-layer)
+• local actions: drop, forward, modify, or send matched packet to 
+
+controller
+• “program” network-wide behaviors
+
+ simple form of “network programmability”
+• programmable, per-packet “processing”
+• historical roots: active networking
+• today: more generalized programming: 
+
+P4 (see p4.org).
+
+Network Layer: 4-60
+
+
+
+Question: how are forwarding tables (destination-based forwarding) 
+or flow tables (generalized forwarding) computed?
+
+Answer: by the control plane (next chapter)
+
+Chapter 4: done!
+
+ Generalized Forwarding
+
+ Network layer: overview
+ IP: the Internet Protocol
+
+
+
+Additional Chapter 4 slides
+
+Network Layer: 4-62
+
+
+
+ network links have MTU (max. 
+transfer size) - largest possible 
+link-level frame
+• different link types, different MTUs 
+
+ large IP datagram divided 
+(“fragmented”) within net
+• one datagram becomes several 
+
+datagrams
+• “reassembled” only at destination
+• IP header bits used to identify, order 
+
+related fragments
+
+IP fragmentation/reassembly
+
+Network Layer: 4-63
+
+fragmentation:
+in: one large datagram
+out: 3 smaller datagrams
+
+reassembly
+
+…
+
+…
+
+
+
+IP fragmentation/reassembly
+
+Network Layer: 4-64
+
+ID
+=x
+
+offset
+=0
+
+fragflag
+=0
+
+length
+=4000
+
+ID
+=x
+
+offset
+=0
+
+fragflag
+=1
+
+length
+=1500
+
+ID
+=x
+
+offset
+=185
+
+fragflag
+=1
+
+length
+=1500
+
+ID
+=x
+
+offset
+=370
+
+fragflag
+=0
+
+length
+=1040
+
+one large datagram becomes
+several smaller datagrams
+
+example:
+ 4000 byte datagram
+ MTU = 1500 bytes
+
+1480 bytes in 
+data field
+
+offset =
+1480/8 
+
+
+
+DHCP: Wireshark output (home LAN)
+
+Network Layer: 4-65
+
+Message type: Boot Reply (2)
+Hardware type: Ethernet
+Hardware address length: 6
+Hops: 0
+Transaction ID: 0x6b3a11b7
+Seconds elapsed: 0
+Bootp flags: 0x0000 (Unicast)
+Client IP address: 192.168.1.101 (192.168.1.101)
+Your (client) IP address: 0.0.0.0 (0.0.0.0)
+Next server IP address: 192.168.1.1 (192.168.1.1)
+Relay agent IP address: 0.0.0.0 (0.0.0.0)
+Client MAC address: Wistron_23:68:8a (00:16:d3:23:68:8a)
+Server host name not given
+Boot file name not given
+Magic cookie: (OK)
+Option: (t=53,l=1) DHCP Message Type = DHCP ACK
+Option: (t=54,l=4) Server Identifier = 192.168.1.1
+Option: (t=1,l=4) Subnet Mask = 255.255.255.0
+Option: (t=3,l=4) Router = 192.168.1.1
+Option: (6) Domain Name Server
+
+Length: 12; Value: 445747E2445749F244574092; 
+IP Address: 68.87.71.226;
+IP Address: 68.87.73.242; 
+IP Address: 68.87.64.146
+
+Option: (t=15,l=20) Domain Name = "hsd1.ma.comcast.net."
+
+Message type: Boot Request (1)
+Hardware type: Ethernet
+Hardware address length: 6
+Hops: 0
+Transaction ID: 0x6b3a11b7
+Seconds elapsed: 0
+Bootp flags: 0x0000 (Unicast)
+Client IP address: 0.0.0.0 (0.0.0.0)
+Your (client) IP address: 0.0.0.0 (0.0.0.0)
+Next server IP address: 0.0.0.0 (0.0.0.0)
+Relay agent IP address: 0.0.0.0 (0.0.0.0)
+Client MAC address: Wistron_23:68:8a (00:16:d3:23:68:8a)
+Server host name not given
+Boot file name not given
+Magic cookie: (OK)
+Option: (t=53,l=1) DHCP Message Type = DHCP Request
+Option: (61) Client identifier
+
+Length: 7; Value: 010016D323688A; 
+Hardware type: Ethernet
+Client MAC address: Wistron_23:68:8a (00:16:d3:23:68:8a)
+
+Option: (t=50,l=4) Requested IP Address = 192.168.1.101
+Option: (t=12,l=5) Host Name = "nomad"
+Option: (55) Parameter Request List
+
+Length: 11; Value: 010F03062C2E2F1F21F92B
+1 = Subnet Mask; 15 = Domain Name
+3 = Router; 6 = Domain Name Server
+44 = NetBIOS over TCP/IP Name Server
+……
+
+replyrequest
+
+
+
+Sidebar: Network Neutrality
+What is network neutrality?
+ technical: how an ISP should share/allocation its resources
+
+• packet scheduling, buffer management are the mechanisms
+ social, economic  principles 
+
+• protecting free speech
+• encouraging innovation, competition
+
+ enforced legal rules and policies
+
+Different countries have different “takes” on network neutrality
+
+Network Layer: 4-66
+
+
+
+Sidebar: Network Neutrality
+
+2015 US FCC Order on Protecting and Promoting an Open Internet: three 
+“clear, bright line” rules:
+
+no blocking … “shall not block lawful content, applications, services, 
+or non-harmful devices, subject to reasonable network management.”
+
+no throttling  … “shall not impair or degrade lawful Internet traffic 
+on the basis of Internet content, application, or service, or use of a 
+non-harmful device, subject to reasonable network management.”
+
+no paid prioritization. … “shall not engage in paid prioritization”
+
+Network Layer: 4-67
+
+
+
+ISP: telecommunications or information service?
+
+US Telecommunication Act of 1934 and 1996: 
+• Title II: imposes “common carrier duties” on telecommunications 
+
+services: reasonable rates, non-discrimination and requires regulation
+• Title I: applies to information services: 
+
+• no common carrier duties (not regulated)
+• but grants FCC authority  “… as may be necessary in the execution 
+
+of its functions”4
+
+Is an ISP a “telecommunications service” or an “information 
+service” provider?
+ the answer really matters from a regulatory standpoint!
+
+Network Layer: 4-68
+
+
+
+The IP hourglass
+
+IP
+
+TCP UDP
+
+HTTP SMTP
+QUIC DASH
+
+RTP …
+
+Ethernet
+WiFi Bluetooth
+
+PPP
+PDCP
+
+…
+
+copper   radio   fiber
+
+Internet’s “thin waist”: 
+ one network layer 
+
+protocol: IP 
+ must be implemented 
+
+by every (billions) of 
+Internet-connected 
+devices
+
+many protocols 
+in physical, link, 
+transport, and 
+application 
+layers 
+
+
+
+The IP hourglass, at middle age
+
+IP
+
+TCP UDP
+
+HTTP SMTP
+QUIC DASH
+
+RTP …
+
+Ethernet
+WiFi Bluetooth
+
+PPP
+PDCP
+
+…
+
+copper   radio   fiber
+
+Internet’s middle age 
+“love handles”? 
+ middleboxes, 
+
+operating inside the 
+network
+
+Firewalls
+
+caching
+
+
+
+Architectural Principles of the Internet
+
+“Many members of the Internet community would argue that there is no architecture, but only a tradition, 
+which was not written down for the first 25 years (or at least not by the IAB).  However, in very general terms, 
+the community believes that
+
+RFC  1958
+
+the goal is connectivity, the tool is the Internet 
+Protocol, and the intelligence is end to end rather than hidden in the 
+network.”
+
+Three cornerstone beliefs:
+ simple connectivity
+ IP protocol: that narrow waist
+ intelligence, complexity at network edge
+
+
+
+The end-end argument
+ some network functionality (e.g., reliable data transfer, congestion) 
+
+can be implemented in network, or at network edge
+
+end-end implementation of reliable data transferapplication
+transport
+network
+data link
+physical
+
+application
+transport
+network
+data link
+physical
+
+application
+transport
+network
+data link
+physical
+
+application
+transport
+network
+data link
+physical
+
+network
+link
+
+physical
+
+network
+link
+
+physical
+
+network
+link
+
+physical
+
+network
+link
+
+physical
+
+network
+link
+
+physical
+
+network
+link
+
+physical
+
+hop-by-hop (in-network) implementation of reliable data transfer
+
+
+
+The end-end argument
+
+“The function in question can completely and correctly be implemented only 
+with the knowledge and help of the application standing at the end points of the 
+communication system. Therefore, providing that questioned function as a 
+feature of the communication system itself is not possible. (Sometimes an 
+incomplete version of the function provided by the communication system may 
+be useful as a performance enhancement.)
+
+We call this line of reasoning against low-level function implementation the “end-
+to-end argument.”
+
+Saltzer, Reed, Clark 1981
+
+ some network functionality (e.g., reliable data transfer, congestion) 
+can be implemented in network, or at network edge
+
+
+
+Where’s the intelligence?
+
+20th century phone net:
+• intelligence/computing at 
+
+network switches
+
+Internet (pre-2005)
+• intelligence, computing at 
+
+edge
+
+Internet (post-2005)
+• programmable network devices
+• intelligence, computing, massive 
+
+application-level infrastructure at edge
+
+
+
+

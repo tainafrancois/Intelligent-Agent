@@ -1,0 +1,20 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rbps: <http://roboprof.com/schema#>
+
+SELECT ?grade
+WHERE {
+  ?student rdf:type rbps:Student ;
+           rbps:IDNumber "40074296"^^xsd:integer ;
+           rbps:hasAttempt ?attemptedCourse.
+  
+  ?attemptedCourse rdf:type rbps:Attempt;
+                   rbps:AttemptCourse ?course ;
+                   rbps:AttemptGrade ?grade.
+  
+  ?course rdf:type rbps:Course ;
+          rbps:CourseSubject "COMP"@en ;
+          rbps:CourseNumber "474"@en.
+    
+}

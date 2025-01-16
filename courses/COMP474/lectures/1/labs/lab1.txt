@@ -1,0 +1,3088 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COMP-474-2234-UU: Lab Session #01 | Moodle
+
+  
+ 
+  
+Our site uses cookies. They allow us to remember your preferences, better serve you and give us information on how you interact with our site. To find out more about our use of cookies, please read our Cookie Notice.
+
+  X Close             
+ 
+   undefined
+ undefined
+ 
+  undefined undefined undefined 
+ 
+    
+  ×  
+ We value your privacy highly. When you provide us with your personal data, including preferences, we will only process information that is necessary for the purpose for which it has been collected. You can read about the other ways we may use your data in our privacy policy
+  X Close    
+ 
+ 
+    User consent tab  Legitimate Interest 
+          Essential cookies
+ 
+ 
+These cookies are essential for you to browse the website and use its features, such as accessing secure areas of the site.
+ 
+   
+ 
+ 
+ 
+ 
+ 
+  
+    X Close 
+     
+ 
+ 
+ 
+ 
+   Open Cookie Settings 
+ 
+  
+
+
+
+
+    
+    Skip to main content
+
+
+
+
+
+
+
+    
+    
+        
+            
+            Side panel
+        
+    
+        
+    
+                
+        
+            
+                
+                    	
+                                            
+                                                Home
+                                            
+                                
+	
+                                            
+                                                Dashboard
+                                            
+                                
+	
+                                            
+                                                My courses
+                                            
+                                
+	
+                                    
+                                        Academic Integrity
+                                    
+                                    
+                                                    
+                                                        Academic Assessment Tool
+                                                    
+                                    
+
+                                
+	
+                                    
+                                        Get Help
+                                    
+                                    
+                                                    
+                                                        Help for Instructors
+                                                    
+                                                    
+                                                        Help for Students
+                                                    
+                                    
+
+                                
+	
+                            
+                                More
+                            
+                            
+
+                        
+
+
+                
+            
+
+    
+        
+
+    
+        
+            
+    
+                
+        
+            5
+        
+
+
+    
+
+    
+        
+            Notifications
+
+                    
+            
+            
+        
+            
+                
+
+
+        
+
+        
+            
+                        
+
+        You have no notifications
+
+
+            
+
+            
+        
+
+                
+                    
+                        See all
+
+                    
+
+                
+    
+
+
+
+    
+        
+        
+            0
+            There are 0 unread conversations
+        
+
+    
+    
+
+            
+                    
+                            
+                                
+                                    
+                                        
+                                                
+                                                    TN
+                                                
+                                        
+                                    
+                                
+                                
+                                    
+                                        
+                                            
+                                                        
+                                                                
+                                                            Profile
+                                                        
+                                                    
+                                                        
+                                                                
+                                                            Grades
+                                                        
+                                                    
+                                                        
+                                                                
+                                                            Calendar
+                                                        
+                                                    
+                                                        
+                                                                
+                                                            Messages
+                                                        
+                                                    
+                                                        
+                                                                
+                                                            Private files
+                                                        
+                                                    
+                                                        
+                                                                
+                                                            Reports
+                                                        
+                                                    
+                                                    
+
+                                                        
+                                                                
+                                                            Preferences
+                                                        
+                                                    
+                                                        
+                                                                
+                                                            Language
+                                                        
+                                                    
+
+                                                        
+                                                                
+                                                            Log out
+                                                        
+                                                    
+                                            
+
+                                                
+                                                    
+                                                        
+                                                            
+                                                                
+                                                                
+                                                            
+                                                            Language selector
+                                                        
+
+                                                        
+
+                                                        
+                                                                    
+                                                                        Deutsch ‎(de)‎
+                                                                    
+                                                                    
+                                                                        English ‎(en)‎
+                                                                    
+                                                                    
+                                                                        Español - Internacional ‎(es)‎
+                                                                    
+                                                                    
+                                                                        Français (Canada) ‎(fr_ca)‎
+                                                                    
+                                                                    
+                                                                        Français ‎(fr)‎
+                                                                    
+                                                                    
+                                                                        Italiano ‎(it)‎
+                                                                    
+                                                                    
+                                                                        العربية ‎(ar)‎
+                                                                    
+                                                        
+
+                                                    
+
+                                                
+
+                                        
+
+                                    
+
+                                
+
+                            
+
+                    
+
+            
+
+            
+        
+
+    
+    
+
+
+    
+        
+            
+        
+    
+
+    
+                
+                
+                    Home
+                
+                
+                    Dashboard
+                
+                
+                    My courses
+                
+                
+                    Academic Integrity
+                    
+                        
+                        
+                            Collapse
+                        
+                    
+                    
+                        
+                        
+                            Expand
+                        
+                    
+                
+                
+                             Academic Assessment Tool
+                
+
+                
+                    Get Help
+                    
+                        
+                        
+                            Collapse
+                        
+                    
+                    
+                        
+                        
+                            Expand
+                        
+                    
+                
+                
+                             Help for Instructors
+                             Help for Students
+                
+
+        
+
+
+    
+
+
+
+        
+    
+        
+            
+        
+    
+
+    
+                        
+    
+        
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                 
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Exam Review Scheduler
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Useful Links The academic calendar (undergraduate,...
+                    
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Online Forums
+                    
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Announcements
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Discussion Forum
+                            
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Course Project
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Project Group Formation
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Private Project Group Forum
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Project Assignment #1
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Project Assignment #1 Submission Box
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Project Assignment #2
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Project Assignment #2 Submission Box
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Project Part #2 Demo Scheduler - COMP 474
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Project Part #2 Demo Scheduler - COMP 6741
+                            
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Introduction to Intelligent Systems
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #01
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course updates, Week 1: Welcome to our course on I...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Knowledge Graphs
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #02
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #01
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #00: Introduction to Python
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #01
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                A Python Exercise (recommended post-lab)
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course updates, Week 2: Labs are starting this wee...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Knowledge Graphs: Vocabularies & Ontologies
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #03
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #02
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #02
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course updates, Week 3: Monday, Jan. 29 is the dea...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Knowledge Base Queries
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #04
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #03
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #03
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course updates, Week 4: Supplementary material for...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Recommender Systems
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #05
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #04
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #04
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course updates, Week 5: Supplementary material for...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Introduction to Machine Learning for Intelligent Systems
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #06
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #05
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #05
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course Updates, Week 6: Supplementary material for...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Reading Week
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                    
+                        Course updates: No lectures, labs, or office hours...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Intelligent Agents
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #07
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #06
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #06
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course Updates, Week 7: Updated the coverage infor...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Text Mining Systems
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #08
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #07
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #07
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lecture Recordings
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course Updates, Week 8: The midterm exam has been ...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Midterm Exam
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lab Session #08
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        When is the midterm exam? 📆 Date: Wednesday, March...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Neural Networks & Word Embeddings
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #09
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #08
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #09
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course Updates, Week 10: Supplementary material fo...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Introduction to Deep Learning
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #10
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Worksheet #09
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #10
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course updates, Week 11: Supplementary material fo...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Deep Learning for Intelligent Systems
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            	
+                    
+                            
+                                Lecture Slides #11
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                            
+                                Lab Session #11
+                            
+                    
+                        
+                    
+                    
+                
+	
+                    
+                    
+                        Course updates, Week 12: Supplementary material fo...
+                    
+                    
+                        
+                    
+                    
+                
+
+
+        
+
+    
+
+
+
+    
+        
+            
+                
+                    
+                    
+                    Expand
+                
+                
+                    
+                    Collapse
+                
+            
+            
+                Final Exam
+            
+            
+                Highlighted
+            
+            
+                
+            
+            
+        
+
+        
+            
+
+        
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+        
+            
+                    
+                        
+                            Open course index
+                            
+                        
+                    
+
+            
+
+            
+    
+        
+            
+                
+    	
+                    COMP-474-2234-UU
+                
+	Lab Session #01
+
+
+
+            
+
+            
+                
+            
+
+            
+                
+            
+
+        
+
+        
+                    
+                        
+
+Lab Session #01
+
+
+
+                    
+
+            
+            
+
+        
+
+    
+
+
+            
+                
+                    
+
+                        
+                            
+                                Lab Session #01
+
+                            
+
+                        Introduction
+
+Welcome to the COMP474/6741 lab sessions! The goal of these labs is to:
+
+	learn how to apply the material from the lectures in practice; and
+	discuss the course project with your team mates and the TA.
+
+
+Most of the examples provided in the lecture assume you run Linux. But generally, the material covered in the course works cross-platform (Linux, Mac, Windows).
+
+ 
+
+Task #1: Python
+
+The first task is to become acquainted with Python, in case you haven't worked with it before. There is a separate intro Lab #00 and a corresponding exercise.
+
+ 
+
+Task #2: Hello, Eliza!
+
+In the lecture you've seen Eliza, which is probably the oldest example of a chatbot/intelligent agent:
+
+	Find some version of Eliza and try it out: There are many implementations you can run online or offline, like this one or this one (note that not all versions you will find use the original DOCTOR script);
+	Make sure you understand how Eliza works;
+	Here's a simplified version of Eliza implemented in Python. Clone the GitHub repo so that you can modify and run it locally. Add "Concordia" as a new keyword, together with some suitable decomposition & reassembly rules and try it out, so you can have a conversation similar to this:
+
+  is:~/eliza-master> python eliza.py
+  How do you do.  Please tell me your problem.
+  > Concordia doesn't offer free pizza!
+  Please tell me more about Concordia!
+
+
+
+
+
+Last modified: Sunday, 21 January 2024, 2:48 PM
+
+
+                        
+
+            
+                ◄ Lab Session #00: Introduction to Python
+
+        
+
+
+
+            
+            
+    
+        
+            
+                Jump to...
+            
+        Jump to...
+Exam Review Scheduler
+Announcements
+Discussion Forum
+Project Group Formation
+Private Project Group Forum
+Project Assignment #1
+Project Assignment #1 Submission Box
+Project Assignment #2
+Project Assignment #2 Submission Box
+Project Part #2 Demo Scheduler - COMP 474
+Project Part #2 Demo Scheduler - COMP 6741
+Lecture Slides #01
+Lecture Slides #02
+Worksheet #01
+Lab Session #00: Introduction to Python
+A Python Exercise (recommended post-lab)
+Lecture Slides #03
+Worksheet #02
+Lab Session #02
+Lecture Slides #04
+Worksheet #03
+Lab Session #03
+Lecture Slides #05
+Worksheet #04
+Lab Session #04
+Lecture Slides #06
+Worksheet #05
+Lab Session #05
+Lecture Slides #07
+Worksheet #06
+Lab Session #06
+Lecture Slides #08
+Worksheet #07
+Lab Session #07
+Lecture Recordings
+Lab Session #08
+Lecture Slides #09
+Worksheet #08
+Lab Session #09
+Lecture Slides #10
+Worksheet #09
+Lab Session #10
+Lecture Slides #11
+Lab Session #11
+
+
+            
+                
+            
+
+    
+
+
+
+
+        
+
+
+
+            
+                A Python Exercise (recommended post-lab) ►
+
+        
+
+
+
+
+
+
+
+                        
+
+                    
+                
+
+            
+
+        
+
+        
+        
+            
+                
+                    
+                
+            
+
+            
+                
+                    
+                        You are logged in as Thi Mai Anh Nguyen (Log out)
+
+                    
+
+                    
+                    
+
+        
+                    
+                    
+
+
+
+
+
+
+
+
+                
+
+                
+                    Powered by Moodle
+
+                
+
+            
+
+        
+            
+                
+                    
+                
+
+            
+
+        
+    
+
+    
+            
+            
+                
+                    
+                
+            
+
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                            Contacts
+                        
+
+                        
+                            
+                                
+                            
+                        
+
+                    
+
+                
+                
+                
+                    
+
+                    
+                        
+                        
+                            Messages selected:
+                            1
+                            
+                                    ×
+                            
+                        
+
+                    
+
+                    
+                        
+                            
+                            
+
+                            
+                                
+                                
+
+                            
+
+                            
+                            
+
+                        
+
+                    
+
+                    
+
+                
+                
+                    
+                        
+                            
+                            
+                                
+                                    
+                                
+                            
+
+                        
+
+                        
+                            
+                                
+                            
+                        
+
+                    
+
+                    
+                        
+                            
+                            Contacts
+                            
+                                0
+                                There are 0 pending contact requests
+                            
+                        
+                    
+
+                
+
+                
+                
+                    
+                        
+                            
+                                
+                                
+                            
+
+                            
+                                
+                            
+                        
+                        
+                            
+                            
+                                
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                
+                            
+
+                        
+
+                    
+
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                            Settings
+                        
+
+                    
+
+                
+
+            
+
+            
+                
+                
+                    
+
+                
+                
+                    
+                        
+                            	
+                                    
+                                        Contacts
+                                    
+                                
+	
+                                    
+                                        Requests
+                                        
+                                            0
+                                            There are 0 pending contact requests
+                                        
+                                    
+                                
+
+
+                        
+
+                        
+                                            
+                    
+                    
+                        No contacts
+                    
+
+                    
+                        
+                    
+
+                    
+                                            
+                        
+                        
+
+                        
+                        
+
+                    
+
+                    
+
+                    
+                        
+                    
+
+                
+
+                
+                                            
+                    
+                    
+                        No contact requests
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+
+                    
+                        
+                    
+
+                
+
+                        
+
+                    
+
+                
+
+                
+                
+                    
+                        
+                            
+                                Contact request sent
+
+                                
+
+                            
+
+                            
+                                Personal space
+
+                                Save draft messages, links, notes etc. to access later.
+
+                           
+
+                            
+
+
+                        
+
+                        
+                            
+                            
+                                
+
+                                
+                                    
+                                    
+                                        Delete for me and for everyone else
+                                    
+                                
+
+                                
+                                    Block
+                                    
+
+                                
+                                
+                                    Unblock
+                                    
+
+                                
+                                
+                                    Remove
+                                    
+
+                                
+                                
+                                    Add
+                                    
+
+                                
+                                
+                                    Delete
+                                    
+
+                                
+                                
+                                    Delete
+                                    
+
+                                
+                                
+                                    Send contact request
+                                    
+
+                                
+                                
+                                    Accept and add to contacts
+                                    
+
+                                
+                                
+                                    Decline
+                                    
+
+                                
+                                OK
+                                Cancel
+                            
+
+                        
+
+                        
+                            
+                                
+                                    
+                                        
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                    
+                                    
+                                        
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                    
+                                    
+                                        
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                    
+                                    
+                                        
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                    
+                                    
+                                        
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                        
+                                            
+                                                
+                                                    
+
+                                                
+
+                                                
+
+                                                
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                        
+
+                                    
+                                
+
+                            
+                        
+
+                    
+
+                
+
+                
+                
+                    
+
+                
+                
+                    
+                            
+                            
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                        
+                                            
+                                        
+                                        Starred
+                                        
+                                            ( total conversations)
+                                        
+                                        
+                                            
+                                        
+                                        
+                                            
+                                            There are  unread conversations
+                                        
+                                    
+                                
+
+                                                            
+                                
+                                
+                                            No starred conversations
+
+
+                                
+
+                                
+                                    
+                                
+
+                                
+                                            
+
+
+
+                                
+
+                                
+                                    
+                                
+
+                            
+
+                            
+
+                            
+                            
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                        
+                                            
+                                        
+                                        Group
+                                        
+                                            ( total conversations)
+                                        
+                                        
+                                            
+                                        
+                                        
+                                            
+                                            There are  unread conversations
+                                        
+                                    
+                                
+
+                                                            
+                                
+                                
+                                            No group conversations
+
+
+                                
+
+                                
+                                    
+                                
+
+                                
+                                            
+
+
+
+                                
+
+                                
+                                    
+                                
+
+                            
+
+                            
+
+                            
+                            
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                        
+                                            
+                                        
+                                        Private
+                                        
+                                            ( total conversations)
+                                        
+                                        
+                                            
+                                        
+                                        
+                                            
+                                            There are  unread conversations
+                                        
+                                    
+                                
+
+                                                            
+                                
+                                
+                                            No private conversations
+
+
+                                
+
+                                
+                                    
+                                
+
+                                
+                                            
+
+
+
+                                
+
+                                
+                                    
+                                
+
+                            
+
+                            
+
+                    
+
+                
+
+                
+                
+                    
+                        
+                        
+                            
+                                
+                                    Contacts
+
+                                    
+
+                                
+
+                                
+                                    Non-contacts
+
+                                    
+
+                                
+
+                                
+                                    
+                                        Load more
+                                        
+
+                                    
+                                
+
+                            
+
+                            
+                                Messages
+
+                                
+
+                                
+                                    
+                                        Load more
+                                        
+
+                                    
+                                
+
+                            
+
+                            No results
+
+                        
+                    
+
+                    
+                        
+
+
+                    
+
+                    
+                        Search people and messages
+
+                    
+
+                
+                
+                
+                    
+                        
+                        
+                            Privacy
+
+                            You can restrict who can message you
+
+                            
+                                
+                                    Accept messages from:
+                                        
+                                            
+                                            
+                                                My contacts only
+                                            
+                                        
+
+                                        
+                                            
+                                            
+                                                My contacts and anyone in my courses
+                                            
+                                        
+
+                                
+
+                            
+
+                        
+                            
+                                Notification preferences
+
+                            
+
+                        
+                            General
+
+                            
+                                
+                                    
+                                    
+                                        Use enter to send
+                                    
+                                
+
+                            
+
+                        
+
+                    
+
+                    
+                        
+                        
+                            
+
+                            
+
+                            
+                                
+                                    
+
+                                    
+
+                                
+
+                                
+                                    
+
+                                    
+
+                                
+
+                                
+                                    
+
+                                    
+
+                                
+
+                            
+
+                            
+
+                            
+                                
+                                    
+
+                                    
+
+                                
+
+                                
+                                    
+
+                                    
+
+                                
+
+                            
+
+                            
+
+                            
+                                
+                                    
+
+                                    
+
+                                
+
+                            
+
+                        
+                    
+
+                
+            
+
+            
+                
+                
+                    
+                        
+                            
+                            
+
+                        
+                            
+                        
+                            
+                                    
+                                        
+                                        
+                                            
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                            
+
+                                            
+                                                
+                                                    
+                                                        
+                                                            
+                                                        
+                                                    
+
+                                                    
+                                                
+
+                                                
+                                                    
+
+                                                
+
+                                                
+                                                    
+
+                                                
+
+                                            
+
+                                            
+                                                
+
+                                                
+
+                                            
+
+                                        
+
+                                    
+
+                                    
+                                        
+                                    
+                                
+                                    
+                                    
+
+                                
+                            
+
+                        
+
+                    
+
+                    
+                        
+                        
+                            
+                                
+                                
+
+                                Delete selected messages
+                            
+                        
+                    
+
+                    
+                        
+                        
+                            
+
+                            
+
+                            
+                                Send contact request
+                                
+
+                            
+                        
+
+                    
+
+                    
+                        
+                        
+                            You have blocked this user.
+
+                            
+                                Unblock user
+                                
+
+                            
+                        
+
+                    
+
+                    
+                        
+                        
+                            You are unable to message this user
+
+                        
+
+                    
+
+                    
+                        
+                            
+
+                            
+
+                        
+                    
+
+                    
+
+                
+                    
+                        
+                            See all
+                        
+                    
+
+            
+
+        
+
+
+
+
+
+
+
+
+
+
+

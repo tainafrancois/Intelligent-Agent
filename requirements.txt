@@ -1,0 +1,5 @@
+pandas
+rdflib
+SPARQLWrapper
+spacy_dbpedia_spotlight
+tika

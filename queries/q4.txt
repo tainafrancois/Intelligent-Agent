@@ -1,0 +1,14 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rbps: <http://roboprof.com/schema#>
+PREFIX rbpd: <http://roboprof.com/data#>
+
+SELECT ?course ?courseLabel
+WHERE {
+    ?course rdf:type rbps:Course ;
+            rdfs:label ?courseLabel ;
+            rbps:CourseOfUniversity ?university ;
+     	    rbps:CourseSubject "COMP"@en .
+  ?university rdf:type rbps:University ;
+              rdfs:label "Concordia University"@en.
+}

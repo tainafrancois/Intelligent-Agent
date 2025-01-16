@@ -1,0 +1,296 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: about_university
+  examples: |
+    - List all courses offered by [Concordia University](university)?
+    - What courses does [Concordia University](university) offer?
+    - What courses are offered at [Concordia University](university)?
+    - What courses are offered at [McGill University](university)?
+    - What courses does [McGill University](university) offer?
+    - List all courses offered by [Waterloo University](university)?
+    - What classes can I take at [Waterloo University](university)?
+    - What classes are offered at [Harvard University](university)?
+
+- intent: about_topic
+  examples: |
+    - In which courses is [Artificial Intelligence](topic) discussed?
+    - In which courses is [Knowledge Graphs](topic) discussed?
+    - I want to learn about [UDP](topic), which classes should I take?
+    - I want to learn about [OWL](topic), which courses should I take?
+    - Which courses should I take to learn about [Semantic Web Technologies](topic)?
+    - Which classes should I take to learn about [Artificial Intelligence](topic)?
+    - In which courses is [Artificial Intelligence](topic) discussed?
+    - In which courses is [FOAF](topic) discussed?
+    - I want to learn about [RDF](topic), which classes should I take?
+    - I want to learn about [AI](topic), which courses should I take?
+    - Which courses should I take to learn about [AI](topic)?
+  
+- intent: about_lecture
+  examples: |
+    - Which topics are covered in [Intelligent Systems](course) during lecture [3](lecture_number)?
+    - Which topics are covered in [Data Communication and Computer Networks](course) during lecture [5](lecture_number)?
+    - Which topics lecture [2](lecture_number) covers in [Intelligent Systems](course)?
+    - Which topics lecture [1](lecture_number) covers in [Data Communication and Computer Networks](course)?
+    - In [Data Communication and Computer Networks](course), which topics are covered during lecture [4](lecture_number)?
+    - In [[Intelligent Systems](course), which topics are covered during lecture [2](lecture_number)?
+    - During lecture [3](lecture_number) in [Data Communication and Computer Networks](course), which topics are covered?
+    - During lecture [2](lecture_number) in [Intelligent Systems](course), which topics are covered?
+
+- intent: about_course_subject_university
+  examples: |
+    - List all courses offered by [Concordia University](university) within the [COMP](subject)?
+    - List all courses offered by [McGill University](university) within the [COMP](subject)?
+    - List all classes offered by [Concordia University](university) within the [COMP](subject)?
+    - List all classes offered by [McGill University](university) within the [COMP](subject)?
+    - List all classes offered by [Concordia University](university) within the [SOEN](subject)?
+    - List all classes offered by [McGill University](university) within the [SOEN](subject)?
+    - List all courses offered by [Concordia University](university) within the [SOEN](subject)?
+    - List all courses offered by [Waterloo University](university) within the [SOEN](subject)?
+    - What courses offered by [Waterloo University](university) within the [SOEN](subject)?
+    - What courses offered by [Concordia University](university) within the [COMP](subject)?
+    - What classes offered by [McGill University](university) within the [SOEN](subject)?
+    - What classes offered by [Concordia University](university) within the [COMP](subject)?
+    - What courses [Waterloo University](university) offers within the [SOEN](subject)?
+    - What courses [Concordia University](university) offers within the [COMP](subject)?
+    - What classes [McGill University](university) offers within the [SOEN](subject)?
+    - What classes [Concordia University](university) offers within the [COMP](subject)?
+
+- intent: about_materials
+  examples: |
+    - What materials (readings, slides) are recommended for [Machine learning](topic) in [COMP](subject) [474](course_number)?
+    - What materials (slides, readings) are recommended for [RDF](topic) in [COMP](subject) [474](course_number)?
+    - What materials (readings, slides) are recommended for [HTTP](topic) in [COMP](subject) [445](course_number)?
+    - What materials (slides, readings) are recommended for [Link Layer](topic) in [COMP](subject) [445](course_number)?
+    - What slides and readings are recommended for [Machine learning](topic) in [COMP](subject) [474](course_number)?
+    - What slides and readings are recommended for [Link Layer](topic) in [COMP](subject) [445](course_number)?
+    - What materials (slides, readings) does [COMP](subject) [445](course_number) recommended for [Link Layer](topic)?
+    - What materials (slides, readings) does [COMP](subject) [474](course_number) recommended for [AI](topic)?
+    - What slides and readings does [COMP](subject) [445](course_number) recommended for [Transport Layer Security](topic)?
+    - What slides and readings does [COMP](subject) [474](course_number) recommended for [Deep Learning](topic)?
+
+
+- intent: about_credits
+  examples: |
+    - How many credits is [COMP](subject) [474](course_number) worth?
+    - How many credits is [COMP](subject) [445](course_number) worth?
+    - How many credits is [ACCO](subject) [330](course_number) worth?
+    - How many credits is [ACCO](subject) [420](course_number) worth?
+    - How many credits do you get for taking [COMP](subject) [474](course_number)?
+    - How many credits do you get for taking [ACCO](subject) [330](course_number)?
+    - Could you tell me how many credits I get for taking [COMP](subject) [474](course_number)?
+    - Could you tell me how many credits I get for taking [ACCO](subject) [330](course_number)?
+
+- intent: about_additional_resources
+  examples: |
+    - For [BLDG](subject) [390](course_number), what additional resources (links to web pages) are available?
+    - For [COMP](subject) [474](course_number), what additional resources (links to web pages) are available?
+    - What resources (links to web pages) are available for [ACCO](subject) [330](course_number)?
+    - What resources (links to web pages) are available for [BLDG](subject) [390](course_number)?
+    - What resources are available for [COMP](subject) [445](course_number)?
+    - What resources are available for [ACTT](subject) [465](course_number)?
+    - For [ACTT](subject) [480](course_number), what additional resources are available?
+    - For [ACTU](subject) [286](course_number), what additional resources are available?
+    - What resources are available for [ADED](subject) [344](course_number)?
+    - What resources are available for [AERO](subject) [201](course_number)?
+    - What web pages are available for [COMP](subject) [445](course_number)?
+    - What web pages are available for [ACTT](subject) [465](course_number)?
+
+- intent: about_course_content
+  examples: |
+    - Detail the content (slides, worksheets, readings) available for [2](lecture_number) in [COMP](course_subject) [474](course_number).
+    - What are the content (slides, worksheets, readings) available for [4] (lecture_number) in [COMP](course_subject) [474] (course_number)?
+    - Detail the content (slides, worksheets, readings) available for [1](lecture_number) in [COMP](course_subject) [445](course_number).
+    - What are the content (slides, worksheets, readings) available for [3] (lecture_number) in [COMP](course_subject) [445] (course_number)?
+    - What slides, worksheets, readings are available for [3](lecture_number) in [ADED](course_subject) [345](course_number)?
+    - What slides, worksheets, readings are available for [4](lecture_number) in [COMP](course_subject) [474](course_number)?
+    - What slides, worksheets, readings are recommended for [6](lecture_number) in [AERO](course_subject) [201](course_number)?
+    - What slides, worksheets, readings are recommended for [6](lecture_number) in [AERO](course_subject) [201](course_number)?
+    - What are the content (slides, worksheets, readings) recommended for [3](lecture_number) in [COMP](course_subject) [445](course_number).
+  
+- intent: about_readings
+  examples: |
+    - What reading materials are recommended for studying [Intelligent system](topic) in [COMP](course_subject) [474](course_number)?
+    - What reading materials are recommended for studying [RDF](topic) in [COMP](course_subject) [474](course_number)?
+    - What reading materials are recommended for studying [Graph API](topic) in [COMP](course_subject) [474](course_number)?
+    - What reading materials are recommended for studying [Artificial Intelligence](topic) in [COMP](course_subject) [472](coursen_number)?
+    - What reading materials are available for studying [DNS](topic) in [COMP](course_subject) [445](course_number)?
+    - What reading materials are available for studying [Intelligent system](topic) in [COMP](course_subject) [474](course_number)?
+    - What reading materials are available for studying [RDF](topic) in [COMP](course_subject) [474](course_number)?
+    - What reading materials are available for studying [Network Layer](topic) in [COMP](course_subject) [445](course_number)?
+    - What reading materials are available for studying [Artificial Intelligence](topic) in [COMP](course_subject) [472](course_number)?
+    - What should I read for studying [Transport Layer Security](topic) in [COMP](course_subject) [445](course_number)?
+    - What should I read for studying [Intelligent system](topic) in [COMP](course_subject) [474](course_number)?
+    - What should I read for studying [Virtual Circuit](topic) in [COMP](course_subject) [445](course_number)?
+    - What should I read for studying [Artificial Intelligence](topic) in [COMP](course_subject) [474](course_number)?
+
+- intent: about_competencies
+  examples: |
+    - What competencies does a student gain after completing [COMP](course_subject) [474](course_number)?
+    - What competencies does a student gain after completing [COMP](course_subject) [445](course_number)?
+    - What competencies does a student gain after completing [ADED](course_subject) [345](course_number)?
+    - What competencies does a student gain after completing [AERO](course_subject) [201](course_number)?
+    - What topics does a student learn after completing [COMP](course_subject) [474](course_number)?
+    - What topics does a student learn after completing [COMP](course_subject) [445](course_number)?
+    - What topics does a student learn after completing [ADED](course_subject) [345](course_number)?
+    - What topics does a student learn after completing [AERO](course_subject) [201](course_number)?
+    - After completing [COMP](course_subject) [474](course_number), what competencies does a student gain?
+    - After completing [ADED](course_subject) [345](course_number), what competencies does a student gain?
+    - After completing [COMP](course_subject) [445](course_number), what competencies does a student gain?
+    - After completing [AERO](course_subject) [201](course_number), what competencies does a student gain?
+
+- intent: about_grades
+  examples: |
+    - What grades did [40074296](student_ID) achieve in [COMP](course_subject) [474](course_number)?
+    - What grades did [40182191](student_ID) achieve in [COMP](course_subject) [445](course_number)?
+    - What grades did [40240585](student_ID) achieve in [AERO](course_subject) [201](course_number)?
+    - What grades did [40074296](student_ID) get in [COMP](course_subject) [474](course_number)?
+    - What grades did [40182191](student_ID) get in [COMP](course_subject) [445](course_number)?
+    - What grades did [40240585](student_ID) get in [AERO](course_subject) [201](course_number)?
+    - In [COMP](course_subject) [474](course_number) what grades did [40074296](student_ID) achieve?
+    - In [AERO](course_subject) [201](course_number) what grades did [40182191](student_ID) get?
+    - In [COMP](course_subject) [445](course_number) what grades did [40240585](student_ID) achieve?
+    - In [ACCO](course_subject) [355](course_number) what grades did [40182191](student_ID) get?
+
+- intent: about_students_completed_courses
+  examples: |
+    - Which students have completed [COMP](course_subject) [445](course_number)?
+    - List students have completed [COMP](course_subject) [474](course_number)?
+    - Can you tell me which students have completed [ACCO](course_subject) [650](course_number)?
+    - Give me all students who have completed [ACTT](course_subject) [201](course_number)?
+    - Do we have a list of students who have completed [COMP](course_subject) [445](course_number)?
+    - List students have passed [COMP](course_subject) [474](course_number)?
+    - Can you tell me which students have passed [ACCO](course_subject) [650](course_number)?
+    - Who have completed [COMP](course_subject) [445](course_number)?
+
+- intent: about_transcripts
+  examples: |
+    - Print a transcript for a [40182191](student_ID), listing all the course taken with their grades.
+    - Give me a transcript for a [40137428](student_ID).
+    - Give me a transcript for a [40289039](student_ID).
+    - I want to see a transcript for a [40240585](student_ID).
+    - What does the transcript of [40240585](student_ID) look like?
+    - Print a transcript for a [40057320](student_ID), listing all the course taken with their grades.
+    - Give me a transcript for a [40057323](student_ID).
+    - Give me a transcript for a [40240582](student_ID).
+    - I want to see a transcript for a [40298347](student_ID).
+    - What does the transcript of [40012687](student_ID) look like?
+
+- intent: course_description
+  examples: |
+    - What is the [COMP](course_subject) [474](course_number) about?
+    - What is the [COMP](course_subject) [445](course_number) about?
+    - What is the [ACTT](course_subject) [211](course_number) about?
+    - What is the description of [COMP](course_subject) [474](course_number)?
+    - What is the description of [COMP](course_subject) [445](course_number)?
+    - What is the description of [ACTT](course_subject) [202](course_number)?
+    - Could you provide me with the description of [COMP](course_subject) [445](course_number)?
+    - Could you provide me with the description of [COMP](course_subject) [474](course_number)?
+    - Could you provide me with the description of [ACTT](course_subject) [325](course_number)?
+    - I'd like to learn more about [COMP](course_subject) [474](course_number)?
+    - I'd like to learn more about [COMP](course_subject) [445](course_number)?
+    - I'd like to learn more about [ACTT](course_subject) [211](course_number)?
+
+- intent: topics_covered
+  examples: |
+    - Which topics are covered in [lab 2](course_event) of [COMP](course_subject) [474](course_number)?
+    - Which topics are covered in [lecture 3](course_event) of [COMP](course_subject) [445](course_number)?
+    - Which topics [lab 4](course_event) of [COMP](course_subject) [445](course_number) covers?
+    - Which topics [lecture 5](course_event) of [ACTT](course_subject) [211](course_number) covers?
+    - In [lab 2](course_event) of [COMP](course_subject) [474](course_number) which topics are covered ?
+    - In [lecture 2](course_event) of [COMP](course_subject) [445](course_number) which topics are covered?
+    - Which topics [COMP](course_subject) [445](course_number) covers in [lab 2]?
+    - Which topics [ACCO](course_subject) [400](course_number) covers in [lecture 3]?
+
+- intent: events_covering_topic
+  examples: |
+    - Which course events cover [Deep Learning](topic)?

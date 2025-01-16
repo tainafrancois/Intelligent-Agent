@@ -1,0 +1,20 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rbps: <http://roboprof.com/schema#>
+PREFIX rbpd: <http://roboprof.com/data#>
+
+SELECT ?material ?material_label
+WHERE {
+  	?material rdf:type rbps:Readings ;
+             rdfs:label ?material_label.
+  
+  	?lecture rbps:hasLectureContent ?material ;
+            rbps:TopicLecture ?topic ;
+            rbps:LectureOfCourse ?course.
+  	?topic rdf:type rbps:Topic ;
+          rdfs:label "Intelligent system"@en.
+  
+  	?course rdf:type rbps:Course ;
+           rdfs:label "Intelligent Systems"@en.
+}

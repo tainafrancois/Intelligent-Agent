@@ -1,0 +1,23 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rbps: <http://roboprof.com/schema#>
+
+SELECT ?student ?id ?firstName ?lastName
+WHERE {
+    ?course rdf:type rbps:Course ;
+            rbps:CourseSubject "COMP"@en ;
+            rbps:CourseNumber "445"@en .
+    
+    ?student rdf:type rbps:Student ;
+             rbps:IDNumber ?id;
+             foaf:givenName ?firstName ;
+             foaf:familyName ?lastName ;
+             rbps:hasAttempt ?attempt .
+  
+  	?attempt rdf:type rbps:Attempt;
+             rbps:AttemptCourse ?course;
+             rbps:AttemptGrade ?grade.
+    FILTER( ?grade >= 50.0 ) 
+}
